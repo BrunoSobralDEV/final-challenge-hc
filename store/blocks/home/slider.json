@@ -1,0 +1,37 @@
+{
+  "list-context.image-list#demo": {
+  "children": ["slider-layout#demo-images"],
+  "props": {
+    "height": 500,
+    "preload": true,
+    "images": [
+      {
+        "image": "https://atmosphere.vteximg.com.br/arquivos/banner_1.png",
+        "mobileImage": "https://atmosphere.vteximg.com.br/arquivos/banner_11_mobile.png"
+      },
+      {
+        "image": "https://atmosphere.vteximg.com.br/arquivos/banner_13.png",
+        "mobileImage": "https://atmosphere.vteximg.com.br/arquivos/banner_13_mobile.png"
+      },
+      {
+        "image": "https://atmosphere.vteximg.com.br/arquivos/banner_15.png",
+        "mobileImage": "https://atmosphere.vteximg.com.br/arquivos/banner_15_mobile.png",
+        "link": "https://www.google.com"
+        
+      }
+    ]
+  }
+},
+"slider-layout#demo-images": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 1,
+      "tablet": 1,
+      "phone": 1
+    },
+    "infinite": true,
+    "showNavigationArrows": "desktopOnly",
+    "blockClass": "carousel"
+  }
+}
+}
