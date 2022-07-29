@@ -1,22 +1,23 @@
 /* eslint-disable no-console */
+import { OrderItemDetailResponse } from "@vtex/clients";
 import { json } from "co-body";
 
-// todo: filter
-// const filterProducts = (items) => {
-//   console.log(items.map(item => {
-//     id: item.productId,
-//     sku: item.sellerSku
-//   }))
-// }
+const filterProducts = (items: OrderItemDetailResponse[]) => {
+  return items.map((item) => ({
+    id: item.productId,
+    sku: item.sellerSku,
+  }));
+};
 
 const handleOrders = async (ctx: Context, next: () => Promise<any>) => {
   try {
     // Obtém ID do pedido
     const { OrderId } = await json(ctx.req);
-    console.log(OrderId);
-
     const { items } = await ctx.clients.oms.order(OrderId);
-    console.log("itens: ", items);
+
+    const filteredItems = filterProducts(items);
+    console.log("Item Info: ", filteredItems);
+    // todo: data -> aws -> *magic* -> store front
 
     ctx.body = "OK";
     ctx.status = 200;
@@ -24,7 +25,6 @@ const handleOrders = async (ctx: Context, next: () => Promise<any>) => {
 
     await next();
   } catch (err) {
-    console.log(err);
     ctx.body = JSON.stringify({
       message: err?.response?.data?.error?.message || "Internal server error",
     });
