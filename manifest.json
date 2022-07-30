@@ -1,6 +1,6 @@
 {
   "vendor": "atmosphere",
-  "name": "scrat",
+  "name": "atmosphere",
   "version": "5.1.0",
   "builders": {
     "styles": "2.x",
