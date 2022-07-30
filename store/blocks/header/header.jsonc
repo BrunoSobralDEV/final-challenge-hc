@@ -112,8 +112,14 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#moda-masculina",
-      "menu-item#moda-feminina"
+      "menu-item#moda-feminina-camisetas",
+      "menu-item#moda-feminina-calcas",
+      "menu-item#moda-feminina-vestidos",
+      "menu-item#moda-feminina-saias",
+      "menu-item#moda-feminina-sapatos",
+      "menu-item#moda-feminina-esportivos",
+      "menu-item#moda-feminina-acessorios",
+      "menu-item#moda-feminina-underwear"
     ],
     "props": {
       "orientation": "vertical"
