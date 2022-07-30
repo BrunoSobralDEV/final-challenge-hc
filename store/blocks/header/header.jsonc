@@ -119,7 +119,8 @@
       "menu-item#moda-feminina-sapatos",
       "menu-item#moda-feminina-esportivos",
       "menu-item#moda-feminina-acessorios",
-      "menu-item#moda-feminina-underwear"
+      "menu-item#moda-feminina-underwear",
+      "menu-item#moda-feminina-todos-produtos"
     ],
     "props": {
       "orientation": "vertical"
