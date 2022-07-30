@@ -1,13 +1,13 @@
 {
   "vtex.menu@2.x:menu#websites": {
     "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
+      "menu-item#quem-somos",
+      "menu-item#fale-conosco"
     ]
   },
-  "menu-item#shop": {
+  "menu-item#quem-somos": {
     "props": {
-      "id": "menu-item-shop",
+      "id": "menu-item-quem-somos",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -15,8 +15,23 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
+        "tagTitle": "Quem Somos",
+        "text": "Quem Somos"
+      }
+    }
+  },
+  "menu-item#fale-conosco": {
+    "props": {
+      "id": "menu-item-fale-conosco",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Fale Conosco",
+        "text": "Fale Conosco"
       }
     }
   },
