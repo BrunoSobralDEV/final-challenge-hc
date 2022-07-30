@@ -1,6 +1,6 @@
 {
   "vendor": "atmosphere",
-  "name": "scrat",
+  "name": "sqaud3",
   "version": "5.1.0",
   "builders": {
     "styles": "2.x",
