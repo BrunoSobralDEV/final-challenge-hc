@@ -10,16 +10,12 @@ export default class Products extends ExternalClient {
     );
   }
 
-  public async saveProducts(products: Product[]): Promise<any> {
-    for await (const product of products) {
-      const data = { idCarrinho: product.id };
-
-      this.http.post("/compra", data, {
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-      });
-    }
+  public async saveProducts(products: Product[]) {
+    return this.http.post("/compra", products, {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
   }
 }

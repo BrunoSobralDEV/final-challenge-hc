@@ -5,7 +5,9 @@ import { json } from "co-body";
 const filterProducts = (items: OrderItemDetailResponse[]) => {
   return items.map((item) => ({
     id: item.productId,
-    // sku: item.sellerSku,
+    sku: item.sellerSku,
+    price: item.sellingPrice,
+    quantity: item.quantity,
   }));
 };
 
@@ -14,11 +16,11 @@ const handleOrders = async (ctx: Context, next: () => Promise<any>) => {
     // Obtém ID do pedido
     const { OrderId } = await json(ctx.req);
     const { items } = await ctx.clients.oms.order(OrderId);
-    const filteredItems: Product[] = filterProducts(items);
-    console.log("Item Info: ", filteredItems);
 
-    await ctx.clients.products.saveProducts(filteredItems);
-    // todo: data✅ -> aws✅ -> *magic* -> store front
+    if (items.length > 1) {
+      const filteredItems = filterProducts(items);
+      await ctx.clients.products.saveProducts(filteredItems);
+    }
 
     ctx.body = "OK";
     ctx.status = 200;
