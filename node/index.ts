@@ -9,6 +9,11 @@ declare global {
   interface State extends RecorderState {
     code: number;
   }
+
+  interface Product {
+    id: string;
+    // sku: string;
+  }
 }
 
 const clients: ClientsConfig<Clients> = {

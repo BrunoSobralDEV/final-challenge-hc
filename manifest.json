@@ -68,7 +68,15 @@
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"
   },
+  "credentialType": "absolute",
   "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "3jfc0467k2.execute-api.us-east-1.amazonaws.com",
+        "path": "*"
+      }
+    },
     {
       "name": "outbound-access",
       "attrs": {
