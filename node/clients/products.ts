@@ -10,9 +10,7 @@ export default class Products extends ExternalClient {
     );
   }
 
-  public async saveProducts(): Promise<any> {
-    const products: Product[] = [{ id: "item1" }, { id: "item2" }];
-
+  public async saveProducts(products: Product[]): Promise<any> {
     for await (const product of products) {
       const data = { idCarrinho: product.id };
 

@@ -14,11 +14,10 @@ const handleOrders = async (ctx: Context, next: () => Promise<any>) => {
     // Obtém ID do pedido
     const { OrderId } = await json(ctx.req);
     const { items } = await ctx.clients.oms.order(OrderId);
-
     const filteredItems: Product[] = filterProducts(items);
     console.log("Item Info: ", filteredItems);
 
-    await ctx.clients.products.saveProducts();
+    await ctx.clients.products.saveProducts(filteredItems);
     // todo: data✅ -> aws✅ -> *magic* -> store front
 
     ctx.body = "OK";
