@@ -1,0 +1,50 @@
+.shelfImage {
+    max-width: 150px;
+    max-height: 180px;
+}
+
+.shelfPlus {
+    text-align: center;
+}
+
+.slider {
+   display: flex;
+   flex-direction: column;
+}
+
+.shelfItems{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    border-color: #333;
+    border: 1px solid ;
+}
+
+.shlefButtonAddToCard {
+    max-width: 80px;
+    max-height: 100px;
+}
+
+.shelfProductName {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.shelfLink {
+    
+    text-decoration: none;
+}
+
+.shelfProductName {
+    white-space: nowrap; 
+    width: 12em; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.shelfMeddle {
+    display: flex;
+    flex-direction: column;
+}

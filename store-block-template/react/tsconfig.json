@@ -1,0 +1,25 @@
+{
+  "extends": "@vtex/tsconfig",
+  "compilerOptions": {
+    "lib": [
+      "DOM"
+    ],
+    "noEmitOnError": false,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "node",
+      "jest"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2017"
+  },
+  "include": [
+    "./typings/*.d.ts",
+    "./**/*.tsx",
+    "./**/*.ts",
+    "Shelf2.tsx"
+  ]
+}
