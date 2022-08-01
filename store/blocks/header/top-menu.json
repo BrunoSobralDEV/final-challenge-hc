@@ -1,0 +1,260 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#category-men",
+      "menu-item#category-woman"
+    ]
+  },
+  "menu-item#category-men": {
+    "props": {
+      "id": "menu-item-category-men",
+      "type": "category",
+      "categoryId": 34,
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-masculina/",
+        "noFollow": false,
+        "tagTitle": "Moda masculina",
+        "text": "Homens"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-men"
+    ]
+  },
+  "menu-item#category-woman": {
+    "props": {
+      "id": "menu-item-category-woman",
+      "categoryId": 4,
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/",
+        "noFollow": false,
+        "tagTitle": "Moda Feminina",
+        "text": "Mulheres"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-woman"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-men": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-men"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-woman": {
+    "props": {
+      "width": "auto",
+      "onMountBehavior": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-woman"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-men": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-camisa",
+      "menu-item#category-underwear"
+    ]
+  },
+  "menu-item#category-camisa": {
+    "props": {
+      "id": "menu-item-category-camisa",
+      "text": "Camiseta",
+      "type": "category",
+      "categoryId": 36,
+      "onMountBehavior": "open",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-masculina/camisetas",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "onMountBehavior": "open",
+        "text": "Camiseta"
+      }
+    }
+  },
+  "menu-item#category-underwear": {
+    "props": {
+      "id": "menu-item-category-underwear",
+      "text": "Underwear",
+      "type": "category",
+      "categoryId": 39,
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-masculina/underwear/",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "onMountBehavior": "open",
+        "text": "Underwear"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#category-woman": {
+    "props": {
+      "orientation": "vertical",
+      "onMountBehavior": "open"
+    },
+    "children": [
+      "menu-item#category-camisaf",
+      "menu-item#category-underwearf",
+      "menu-item#category-dress",
+      "menu-item#category-pantes",
+      "menu-item#category-shoes",
+      "menu-item#category-acessories",
+      "menu-item#category-skirt"
+    ]
+  },
+  "menu-item#category-camisaf": {
+    "props": {
+      "id": "menu-item-category-camisaf",
+      "onMountBehavior": true,
+      "categoryId": 6,
+      "text": "Camiseta",
+      "type": "category",
+      "onMountBehavior": "open",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/camisetas",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "onMountBehavior": "open",
+        "text": "Camiseta"
+      }
+    }
+  },
+  "menu-item#category-underwearf": {
+    "props": {
+      "id": "menu-item-category-underwear",
+      "text": "Underwear",
+      "categoryId": 33,
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/underwear/",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "onMountBehavior": "open",
+        "text": "Underwear"
+      }
+    }
+  },
+  "menu-item#category-dress": {
+    "props": {
+      "id": "menu-item-category-dress",
+      "text": "Vestidos",
+      "type": "category",
+      "categoryId": 7,
+      "onMountBehavior": "open",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/vestidos",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "onMountBehavior": "open",
+        "text": "Vestidos"
+      }
+    }
+  },
+  "menu-item#category-pantes": {
+    "props": {
+      "id": "menu-item-category-pantes",
+      "text": "Calças",
+      "categoryId": 8,
+      "type": "category",
+      "onMountBehavior": "open",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/calcas",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "onMountBehavior": "open",
+        "text": "Calças"
+      }
+    }
+  },
+  "menu-item#category-shoes": {
+    "props": {
+      "id": "menu-item-category-shoes",
+      "text": "Sapatos",
+      "categoryId": 9,
+      "type": "category",
+      "onMountBehavior": "open",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/sapatos",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "onMountBehavior": "open",
+        "text": "Sapatos"
+      }
+    }
+  },
+  "menu-item#category-acessories": {
+    "props": {
+      "id": "menu-item-category-acessories",
+      "text": "Acessorios",
+      "categoryId": 32,
+      "type": "category",
+      "onMountBehavior": "open",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/acessorios",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "onMountBehavior": "open",
+        "text": "Acessorios"
+      }
+    }
+  },
+  "menu-item#category-skirt": {
+    "props": {
+      "id": "menu-item-category-saia",
+      "text": "Saias",
+      "categoryId": 5,
+      "type": "category",
+      "onMountBehavior": "open",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/saias",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "onMountBehavior": "open",
+        "text": "Saias"
+      }
+    }
+  }
+}

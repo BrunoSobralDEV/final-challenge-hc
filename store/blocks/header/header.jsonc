@@ -1,0 +1,167 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "sticky-layout#4-desktop",
+      "flex-layout.row#3-desktop"
+    ]
+  },
+  "flex-layout.row#1-desktop": {
+    "children": [],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-menu"
+      // "vtex.menu@2.x:menu#institutional"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#4-desktop"
+    ]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "search-bar",
+      "services",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "logo#desktop"
+    ]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-menu"
+    ]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://i.imgur.com/Jgi1l3k.png",
+      "width": "180",
+      "height": "25"
+    }
+  },
+  "header-layout.mobile": {
+    "children": [
+      "sticky-layout#1-mobile"
+    ]
+  },
+  "sticky-layout#1-mobile": {
+    "children": [
+      "flex-layout.row#1-mobile"
+    ]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "services",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": [
+      "menu#drawer"
+    ]
+  },
+  "menu#drawer": {
+    "children": [
+      "flex-layout.row#drawer",
+      "flex-layout.row#drawer2"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "flex-layout.row#drawer": {
+    "children": [
+      "logo#mobile",
+      "search-bar"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#drawer2": {
+    "children": [
+      "menu-item#category-men1",
+      "menu-item#category-woman1"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://i.imgur.com/Jgi1l3k.png",
+      "width": "100",
+      "height": "45"
+    }
+  }
+}

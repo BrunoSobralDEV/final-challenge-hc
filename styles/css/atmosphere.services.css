@@ -1,0 +1,42 @@
+.services {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  margin: auto 5px;
+  padding: 0 10px;
+}
+
+.services:hover {
+  background-color: #dbe9fd;
+}
+
+.superIcons {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.servicesLabel {
+  font-size: 16px;
+}
+
+.subServicesLabel {
+  margin: 0;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+
+
+.options:not(.firstLine) {}

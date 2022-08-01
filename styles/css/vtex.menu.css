@@ -1,0 +1,11 @@
+.menuItem,
+.menuItem--isOpen,
+.styledLinkContent,
+.styledLinkContainer {
+  color: black;
+  text-align: center;
+}
+
+.styledLinkContent:nth-child(0n+2) {
+  color: white;
+}
