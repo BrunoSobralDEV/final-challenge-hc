@@ -67,6 +67,13 @@
   font-weight: 700;
 }
 
+.listItem{
+  list-style-type: none;
+
+}
+.heading--title{
+  color: #080814a9;
+}
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;
