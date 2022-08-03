@@ -11,9 +11,7 @@ declare global {
   }
 
   interface Product {
-    id: string;
     sku: string;
-    price: number;
     quantity: number;
   }
 }

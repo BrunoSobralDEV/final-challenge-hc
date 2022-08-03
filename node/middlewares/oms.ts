@@ -4,9 +4,7 @@ import { json } from "co-body";
 
 const filterProducts = (items: OrderItemDetailResponse[]) => {
   return items.map((item) => ({
-    id: item.productId,
     sku: item.sellerSku,
-    price: item.sellingPrice,
     quantity: item.quantity,
   }));
 };
