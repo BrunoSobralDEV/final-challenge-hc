@@ -9,3 +9,11 @@
 .styledLinkContent:nth-child(0n+2) {
   color: white;
 }
+
+.menuItem--main,
+.menuItem--main--isOpen,
+.styledLinkContainer--main,
+.styledLinkContent--main {
+  font-weight: 600;
+  font-size: 30px;
+}

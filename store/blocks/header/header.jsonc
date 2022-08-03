@@ -72,7 +72,7 @@
       "verticalAlign": "middle"
     },
     "children": [
-      "logo#desktop"
+      "vtex.store-components:logo#desktop"
     ]
   },
   "flex-layout.col#category-menu": {
@@ -83,9 +83,9 @@
       "vtex.menu@2.x:menu#category-menu"
     ]
   },
-  "logo#desktop": {
+  "vtex.store-components:logo#desktop": {
     "props": {
-      "title": "Logo",
+      "title": "Logo Desktop",
       "href": "/",
       "url": "https://i.imgur.com/Jgi1l3k.png",
       "width": "180",
@@ -105,9 +105,8 @@
   "flex-layout.row#1-mobile": {
     "children": [
       "drawer",
-      "logo#mobile",
+      "vtex.store-components:logo#mobile",
       "flex-layout.col#spacer",
-      "services",
       "login",
       "minicart.v2"
     ],
@@ -123,6 +122,15 @@
       "menu#drawer"
     ]
   },
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
   "menu#drawer": {
     "children": [
       "flex-layout.row#drawer",
@@ -134,7 +142,7 @@
   },
   "flex-layout.row#drawer": {
     "children": [
-      "logo#mobile",
+      "vtex.store-components:logo#mobile",
       "search-bar"
     ],
     "props": {
@@ -155,9 +163,9 @@
       "height": "100%"
     }
   },
-  "logo#mobile": {
+  "vtex.store-components:logo#mobile": {
     "props": {
-      "title": "Logo",
+      "title": "Logo Mobile",
       "href": "/",
       "url": "https://i.imgur.com/Jgi1l3k.png",
       "width": "100",

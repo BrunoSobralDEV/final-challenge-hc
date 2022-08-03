@@ -9,40 +9,47 @@
  */
 {
   "store.orderplaced": {
-    "blocks": ["order-placed"]
+    "blocks": [
+      "order-placed"
+    ]
   },
-
   "store.account": {
-    "blocks": ["my-account"],
+    "blocks": [
+      "my-account"
+    ],
     "parent": {
       "challenge": "challenge.profile"
     }
   },
-
   "store.login": {
-    "blocks": ["login-content#default"]
+    "blocks": [
+      "login-content#default"
+    ]
   },
-
   "login-content#default": {
     "props": {
-      "isInitialScreenOptionOnly": false,
-      "defaultOption": 1,
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
       "showPasswordVerificationIntoTooltip": true
     }
   },
-
   "store.product-review-form": {
-    "blocks": ["product-review-form"]
+    "blocks": [
+      "product-review-form"
+    ]
   },
-
   "store.not-found#product": {
-    "blocks": ["rich-text#not-found"]
+    "blocks": [
+      "rich-text#not-found"
+    ]
   },
-
   "store.not-found#search": {
-    "blocks": ["rich-text#not-found"]
+    "blocks": [
+      "rich-text#not-found"
+    ]
   },
-
   "rich-text#not-found": {
     "props": {
       "textAlignment": "CENTER",

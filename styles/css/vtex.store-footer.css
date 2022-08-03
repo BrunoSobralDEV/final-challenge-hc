@@ -11,3 +11,9 @@
   display: none;
   padding-top: 16px;
 }
+
+.acceptedPaymentMethodContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

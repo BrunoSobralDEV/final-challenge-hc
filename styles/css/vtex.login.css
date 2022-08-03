@@ -3,6 +3,18 @@
   color: #000;
 }
 
+.profile {
+  color: #000;
+  font-size: 16px;
+}
+
 .label {
   color: #000;
+  font-weight: 600;
 }
+
+/* 
+.buttonLink {
+  background-color: #000;
+  color: aliceblue;
+} */

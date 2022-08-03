@@ -1,7 +1,7 @@
 {
   "vendor": "atmosphere",
   "name": "finalprojectatmosphere",
-  "version": "5.1.0",
+  "version": "5.2.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -64,7 +64,7 @@
     "vtex.tab-layout": "0.x",
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x",
-    "atmosphere.services": "0.x"
+    "atmosphere.services": "1.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"

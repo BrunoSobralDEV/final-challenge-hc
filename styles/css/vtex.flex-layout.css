@@ -103,3 +103,18 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+.flexRowContent--main-header {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.flexRowContent,
+.flexRowContent--menu-row:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #dfdfdf;
+  color: #FFF;
+}

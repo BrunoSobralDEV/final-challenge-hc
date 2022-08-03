@@ -1,337 +1,130 @@
 {
-  "vtex.menu@2.x:menu#Products": {
+  "vtex.menu@2.x:menu#categories1": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#news",
-      "menu-item#blackfriday",
-      "menu-item#sale",
-      "menu-item#personalization"
+      "menu-item#categories",
+      "menu-item#moda-masculina",
+      "menu-item#moda-feminina",
+      "menu-item#colecionaveis"
     ]
   },
-  "menu-item#news": {
+  "menu-item#categories": {
     "props": {
-      "id": "menu-item-news",
+      "id": "menu-item-categories",
       "type": "custom",
+      "blockClass": "main",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "News",
-        "text": "News"
+        "tagTitle": "Categorias",
+        "text": "Categorias"
       }
     }
   },
-  "menu-item#blackfriday": {
+  "menu-item#moda-masculina": {
     "props": {
-      "id": "menu-item-black-friday",
+      "id": "menu-item-moda-masculina",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/moda-masculina",
         "noFollow": false,
-        "tagTitle": "BlackFriday",
-        "text": "Black Friday"
+        "tagTitle": "Moda Masculina",
+        "text": "Moda masculina"
       }
     }
   },
-  "menu-item#sale": {
+  "menu-item#moda-feminina": {
     "props": {
-      "id": "menu-item-sale",
+      "id": "menu-item-moda-feminina",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/moda-feminina",
         "noFollow": false,
-        "tagTitle": "Sale",
-        "text": "Sale"
+        "tagTitle": "Moda feminina",
+        "text": "Moda feminina"
       }
     }
   },
-  "menu-item#personalization": {
+  "menu-item#colecionaveis": {
     "props": {
-      "id": "menu-item-personalization",
+      "id": "menu-item-colecionaveis",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
         "noFollow": false,
-        "tagTitle": "Personalization",
-        "text": "Personalization"
+        "tagTitle": "Itens colecionaveis",
+        "text": "Colecionaveis (em breve)"
       }
     }
   },
-  "vtex.menu@2.x:menu#footer-decoration": {
+  "vtex.menu@2.x:menu#mens-categories": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
-    ]
-  },
-  "menu-item#smartphones": {
-    "props": {
-      "id": "menu-item-smartphones",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/decoration/smartphones",
-        "noFollow": true,
-        "tagTitle": "Smartphones",
-        "text": "Smartphones"
-      }
-    }
-  },
-  "menu-item#videogames": {
-    "props": {
-      "id": "menu-item-videogames",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/decoration/videogames",
-        "noFollow": true,
-        "tagTitle": "Videogames",
-        "text": "Videogames"
-      }
-    }
-  },
-  "menu-item#tvs": {
-    "props": {
-      "id": "menu-item-tvs",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/decoration/tvs",
-        "noFollow": true,
-        "tagTitle": "TVs",
-        "text": "TVs"
-      }
-    }
-  },
-  "vtex.menu@2.x:menu#footer-bags": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#bags",
-      "menu-item#backpacks",
-      "menu-item#necessaire"
-    ]
-  },
-  "menu-item#bags": {
-    "props": {
-      "id": "menu-item-bags",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/d",
-        "noFollow": true,
-        "tagTitle": "Bags",
-        "text": "Bags"
-      }
-    }
-  },
-  "menu-item#backpacks": {
-    "props": {
-      "id": "menu-item-backpacks",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/backpacks",
-        "noFollow": true,
-        "tagTitle": "Backpacks",
-        "text": "Backpacks"
-      }
-    }
-  },
-  "menu-item#necessaire": {
-    "props": {
-      "id": "menu-item-necessaire",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/necessaire",
-        "noFollow": true,
-        "tagTitle": "Necessaire",
-        "text": "Necessaire"
-      }
-    }
-  },
-  "vtex.menu@2.x:menu#footer-clothing": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#clothing",
-      "menu-item#shorts",
-      "menu-item#tank-tops",
+      "menu-item#mens",
       "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
+      "menu-item#underwear",
+      "menu-item#shoes",
+      "menu-item#pants"
     ]
   },
-  "vtex.menu@2.x:menu#footer-mobile": {
+  "menu-item#mens": {
     "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#clothing-mobile",
-      "menu-item#decoration-mobile",
-      "menu-item#sale-mobile"
-    ]
-  },
-  "menu-item#clothing-mobile": {
-    "props": {
-      "id": "menu-item-category-clothing",
+      "id": "menu-item-category-mens",
       "type": "custom",
+      "blockClass": "main",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/d",
+        "href": "/moda-masculina",
         "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#clothing"
-    ]
-  },
-  "vtex.menu@2.x:submenu.accordion#clothing": {
-    "children": [
-      "vtex.menu@2.x:menu#clothing-accordion"
-    ]
-  },
-  "vtex.menu@2.x:menu#clothing-accordion": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
-    ]
-  },
-  "menu-item#decoration-mobile": {
-    "props": {
-      "itemProps": {
-        "tagTitle": "Decoration",
-        "text": "Decoration"
-      }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#decoration"
-    ]
-  },
-  "vtex.menu@2.x:submenu.accordion#decoration": {
-    "children": [
-      "vtex.menu@2.x:menu#footer-decoration-mobile"
-    ]
-  },
-  "vtex.menu@2.x:menu#footer-decoration-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
-    ]
-  },
-  "menu-item#sale-mobile": {
-    "props": {
-      "itemProps": {
-        "tagTitle": "Sale",
-        "text": "Sale"
-      }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#sale"
-    ]
-  },
-  "vtex.menu@2.x:submenu.accordion#sale": {
-    "children": [
-      "vtex.menu@2.x:menu#footer-sale-mobile"
-    ]
-  },
-  "vtex.menu@2.x:menu#footer-sale-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
-    ]
-  },
-  "menu-item#clothing": {
-    "props": {
-      "id": "menu-item-category-clothing",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/d",
-        "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "Masculino",
+        "text": "Masculino"
       }
     }
   },
-  "menu-item#shorts": {
+  "menu-item#shoes": {
     "props": {
-      "id": "menu-item-shorts",
+      "id": "menu-item-shoes",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/shorts",
+        "href": "#",
         "noFollow": false,
-        "tagTitle": "Shorts",
-        "text": "Shorts"
+        "tagTitle": "Tênis e sapatos",
+        "text": "Sapatos (Em breve)"
       }
     }
   },
-  "menu-item#tank-tops": {
+  "menu-item#underwear": {
     "props": {
-      "id": "menu-item-tank-tops",
+      "id": "menu-item-underwear",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/tank-tops",
+        "href": "/moda-masculina/underwear",
         "noFollow": false,
-        "tagTitle": "Tank tops",
-        "text": "Tank tops"
+        "tagTitle": "Roupas de baixo",
+        "text": "Roupas de baixo"
       }
     }
   },
@@ -343,41 +136,302 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/shirts",
+        "href": "/moda-masculina/camisetas",
         "noFollow": false,
-        "tagTitle": "Shirts",
-        "text": "Shirts"
+        "tagTitle": "Camisetas",
+        "text": "Camisetas"
       }
     }
   },
-  "menu-item#sweatshirt": {
+  "menu-item#pants": {
     "props": {
-      "id": "menu-item-sweat-shirts",
+      "id": "menu-item-pants",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/sweatshirt",
+        "href": "#",
         "noFollow": false,
-        "tagTitle": "Sweatshirt",
-        "text": "Sweatshirt"
+        "tagTitle": "Calças e bermudas",
+        "text": "Calças (em breve)"
       }
     }
   },
-  "menu-item#cropped": {
+  "vtex.menu@2.x:menu#girls-categories": {
     "props": {
-      "id": "menu-item-cropped",
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#girls",
+      "menu-item#camisaf",
+      "menu-item#underwearf",
+      "menu-item#dress",
+      "menu-item#pantes",
+      "menu-item#shoesf"
+    ]
+  },
+  "menu-item#girls": {
+    "props": {
+      "id": "menu-item-category-girls",
+      "type": "custom",
+      "blockClass": "main",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina",
+        "noFollow": true,
+        "tagTitle": "Feminino",
+        "text": "Feminino"
+      }
+    }
+  },
+  "menu-item#camisaf": {
+    "props": {
+      "id": "menu-item-shirtsf",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/cropped",
-        "noFollow": false,
-        "tagTitle": "Cropped",
-        "text": "Cropped"
+        "href": "/moda-feminina/camisetas",
+        "noFollow": true,
+        "tagTitle": "Blusas e camisetas",
+        "text": "Blusas e camisetas"
       }
     }
+  },
+  "menu-item#underwearf": {
+    "props": {
+      "id": "menu-item-underwearf",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/underwear",
+        "noFollow": true,
+        "tagTitle": "Roupas de baixo",
+        "text": "Roupas de baixo"
+      }
+    }
+  },
+  "menu-item#dress": {
+    "props": {
+      "id": "menu-item-dress",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/vestidos",
+        "noFollow": true,
+        "tagTitle": "Vestidos",
+        "text": "Vestidos"
+      }
+    }
+  },
+  "menu-item#pantes": {
+    "props": {
+      "id": "menu-item-pantes&skirts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/calcas/saias?initialMap=c&initialQuery=moda-feminina&map=category-1,category-2,category-2",
+        "noFollow": true,
+        "tagTitle": "Calças e saias",
+        "text": "Calças e saias"
+      }
+    }
+  },
+  "menu-item#shoesf": {
+    "props": {
+      "id": "menu-item-shoesf",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/sapatos",
+        "noFollow": true,
+        "tagTitle": "Calçados",
+        "text": "Calçados"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-ending": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#about-us",
+      "menu-item#faq",
+      "menu-item#contact-us",
+      "menu-item#know-our-team"
+    ]
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "blockClass": "main",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Sobre nós",
+        "text": "Sobre nós"
+      }
+    }
+  },
+  "menu-item#faq": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Faq",
+        "text": "Faq"
+      }
+    }
+  },
+  "menu-item#contact-us": {
+    "props": {
+      "id": "menu-item-contact-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Contate-nos (em breve)",
+        "text": "Contate-nos (em breve)"
+      }
+    }
+  },
+  "menu-item#know-our-team": {
+    "props": {
+      "id": "menu-item-kot",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://hiringcoders.alexxharper.dev",
+        "noFollow": true,
+        "tagTitle": "Conheça o nosso time",
+        "text": "Conheça o nosso time (Em breve)"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#mens-mobile",
+      "menu-item#girls-mobile",
+      "menu-item#about-mobile"
+    ]
+  },
+  "menu-item#mens-mobile": {
+    "props": {
+      "id": "menu-item-category-mens",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-masculina/d",
+        "noFollow": true,
+        "tagTitle": "mens",
+        "text": "Homens"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mens"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#mens": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-mens-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#footer-mens-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#shoes",
+      "menu-item#underwear",
+      "menu-item#shirts",
+      "menu-item#pants"
+    ]
+  },
+  "menu-item#girls-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Mulheres",
+        "text": "Mulheres"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#girls"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#girls": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-girls-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#footer-girls-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-camisaf",
+      "menu-item#category-underwearf",
+      "menu-item#category-dress",
+      "menu-item#category-pantes",
+      "menu-item#category-shoes",
+      "menu-item#category-acessories",
+      "menu-item#category-skirt"
+    ]
+  },
+  "menu-item#about-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Sobre nós",
+        "text": "Sobre nós"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#about"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#about": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-about-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#footer-about-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#faq",
+      "menu-item#contact-us",
+      "menu-item#know-our-team"
+    ]
   }
 }
