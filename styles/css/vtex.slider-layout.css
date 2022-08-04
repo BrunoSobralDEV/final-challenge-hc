@@ -29,3 +29,33 @@
   padding-right: .5rem;
   min-height: 550px;
 }
+
+/************ TENDENCIES SHELF  ************/
+.sliderLayoutContainer--categories {
+  padding-left: 5rem;
+  padding-bottom: 5rem;
+  align-items: center;
+}
+
+.imageElement--categories {
+  max-width: 200px;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.imageElement--categories:hover {
+  box-shadow: 1px 1px 3px #505050;
+}
+
+.sliderLeftArrow--categories {
+  padding-left: 6rem;
+}
+
+.caretIcon--categories {
+  background-color: #fff;
+  padding: .5rem;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px #505050;
+  
+}
