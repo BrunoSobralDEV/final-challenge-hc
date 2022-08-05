@@ -95,6 +95,10 @@ SSH is a secure protocol, but you need to register a key ssh in your github befo
 [![VTEX IO](https://img.shields.io/badge/VTEX%20IO-F71963?style=for-the-badge&logo=typescript&logoColor=ffffff)](#)
 [![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=FF9900)](#)
 
+- [Amazon API Gateway](https://aws.amazon.com/pt/api-gateway/)
+- [AWS Lambda](https://aws.amazon.com/pt/lambda/)
+- [Amazon DynamoDB](https://aws.amazon.com/pt/dynamodb/?trk=3e4c2258-4f21-4854-9de7-2f6da2ef0989&sc_channel=ps&sc_campaign=acquisition&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Database|DynamoDB|BR|PT|Text&s_kwcid=AL!4422!3!589951433444!p!!g!!aws%20dynamodb&ef_id=Cj0KCQjw_7KXBhCoARIsAPdPTfhoSB0G37TkcaRmJQVNdzbFMtBGGdl-Y8bT7YPKf8uHqAQnUj6coyoaAuJjEALw_wcB:G:s&s_kwcid=AL!4422!3!589951433444!p!!g!!aws%20dynamodb)
+
 - Testes
 
 [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=ffffff)](#)
