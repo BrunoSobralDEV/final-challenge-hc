@@ -65,7 +65,8 @@
     "vtex.tab-layout": "0.x",
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x",
-    "atmosphere.tendencies": "0.x"
+    "atmosphere.tendencies": "0.x",
+    "vtex.shelf-indicate": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"

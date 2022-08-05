@@ -3,7 +3,8 @@
     "blocks": [
       "list-context.image-list#demo",
       "rich-text#shelf-tendencies",
-      "tendencies"
+      "tendencies",
+      "shelf-indicate"
     ]
   },
 
