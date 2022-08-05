@@ -1,0 +1,73 @@
+.sliderTrack {
+  margin-bottom: 5rem;
+}
+
+.sliderTrackContainer {
+  margin: 0 5rem;
+}
+
+.sliderLayoutContainer {
+  padding: 0 !important;
+}
+
+
+.link{
+  color: #000;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.image {
+  max-height: 12.5rem;
+  max-width: 12.5rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  margin: .2rem;
+  padding: 0;
+}
+
+.image:hover {
+  box-shadow: 0 0 5px #b2b2b2;
+}
+
+.caretIcon {
+  top: -48px;
+  margin-left: 10.5rem;
+  margin-right: 10.5rem;
+  position: relative;
+  background-color: #fff;
+  padding: .5rem;
+  box-shadow: 2px 2px 5px #b2b2b2;
+  border-radius: 20px;
+}
+
+@media (max-width: 1500px) {
+  .caretIcon {
+    margin-left: 5rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .image {
+    max-height: 10rem;
+    max-width: 10rem;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 620px) {  
+  .image {
+    max-height: 20rem;
+    max-width: 20rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .caretIcon {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}

@@ -5,13 +5,16 @@
 }
 
 .container--shelfTitle {
-  color: #727273;
-  justify-content: center;
+  font-weight: bold;
+  padding-left: 7rem;
+  padding-top: 2rem;
+  color: #000;
+  justify-content: left;
   text-align: center;
 }
 
 .headingLevel2--shelfTitle {
-  font-weight: 200;
+  font-weight: 800;
 }
 
 .container--deals .paragraph {
@@ -67,7 +70,7 @@
   font-weight: 700;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (max-width: 640px) {
   .container--question .strong {
     font-size: 40px;
     line-height: 3rem;
@@ -86,5 +89,21 @@
 
   .container--title .paragraph {
     line-height: 1.3em;
+  }
+
+  .container--shelfTitle {
+    padding-left: 9rem;
+  }
+}
+
+@media (max-width: 775px) {
+  .headingLevel2--shelfTitle {
+    font-size: 1.7rem;
+  }
+
+  .container--shelfTitle {
+    padding: 0 1rem;
+    justify-content: center;
+    text-align: center;
   }
 }
