@@ -126,7 +126,9 @@ const Shelf2 = () => {
             desktop: 2,
             tablet: 1,
             mobile: 1,
-          }}>
+          }}
+          showNavigationArrows= "desktopOnly"
+          showPaginationDots= "desktopOnly" >
           {arrayProducts.map((product: any) => (
             <ShelfItem
               key={product.id}
