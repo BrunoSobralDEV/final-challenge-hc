@@ -4,7 +4,7 @@ import { json } from "co-body";
 
 const filterProducts = (items: OrderItemDetailResponse[]) => {
   return items.map((item) => ({
-    sku: item.sellerSku,
+    sellerSku: item.sellerSku,
     quantity: item.quantity,
   }));
 };
@@ -12,12 +12,15 @@ const filterProducts = (items: OrderItemDetailResponse[]) => {
 const handleOrders = async (ctx: Context, next: () => Promise<any>) => {
   try {
     // Obtém ID do pedido
-    const { OrderId } = await json(ctx.req);
+    const { OrderId, State } = await json(ctx.req);
     const { items } = await ctx.clients.oms.order(OrderId);
 
     if (items.length > 1) {
       const filteredItems = filterProducts(items);
-      await ctx.clients.products.saveProducts(filteredItems);
+      await ctx.clients.products.saveProducts({
+        type: State,
+        items: filteredItems,
+      });
     }
 
     ctx.body = "OK";

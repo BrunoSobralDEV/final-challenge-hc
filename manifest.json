@@ -75,7 +75,7 @@
     {
       "name": "outbound-access",
       "attrs": {
-        "host": "3jfc0467k2.execute-api.us-east-1.amazonaws.com",
+        "host": "k30cnnmuxj.execute-api.us-east-1.amazonaws.com",
         "path": "*"
       }
     },

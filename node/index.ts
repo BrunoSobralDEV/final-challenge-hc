@@ -11,8 +11,13 @@ declare global {
   }
 
   interface Product {
-    sku: string;
+    sellerSku: string;
     quantity: number;
+  }
+
+  interface OrderInfo {
+    type: string;
+    items: Product[];
   }
 }
 
