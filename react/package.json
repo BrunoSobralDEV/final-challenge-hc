@@ -1,0 +1,22 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-apollo": "^3.1.5"
+  },
+  "devDependencies": {
+    "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context",
+    "vtex.product-identifier": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-identifier@0.4.0/public/@types/vtex.product-identifier",
+    "vtex.product-kit": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-kit@1.10.2/public/_types/react",
+    "vtex.product-list": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list@0.35.1/public/@types/vtex.product-list",
+    "vtex.product-price": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-price@1.29.0/public/@types/vtex.product-price",
+    "vtex.product-quantity": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-quantity@1.8.1/public/@types/vtex.product-quantity",
+    "vtex.product-specification-badges": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-specification-badges@0.3.0/public/@types/vtex.product-specification-badges",
+    "vtex.product-specifications": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-specifications@1.1.1/public/@types/vtex.product-specifications",
+    "vtex.product-summary": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.80.1/public/@types/vtex.product-summary",
+    "vtex.reviews-and-ratings": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.reviews-and-ratings@3.10.1/public/@types/vtex.reviews-and-ratings",
+    "vtex.shelf": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf@1.47.2/public/@types/vtex.shelf"
+  }
+}
