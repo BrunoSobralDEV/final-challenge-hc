@@ -131,4 +131,43 @@
         font-size: 42px;
         font-weight: 300;
     }
+
+    .shelfImage {
+        max-width: 100px;
+        max-height: 120px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+
+    .shelfItems {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        border-color: transparent;
+        height: 23rem;
+    }
+
+    .shlefButtonAddToCard {
+        position: relative;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        font-size: 12px;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .shelfPrice {
+        color: #000000;
+        width:68px;
+        font-weight: 250;
+        min-height: 12px;
+        left: 16px;
+    }
 }
