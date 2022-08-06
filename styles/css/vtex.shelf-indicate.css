@@ -1,0 +1,173 @@
+.shelfImage {
+    max-width: 150px;
+    max-height: 180px;
+    height: 250px !important;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    max-height: 250px;
+}
+
+
+.shelfPlus {
+    text-align: center;
+    display: inline-block;
+    transform: translatex(0px) translatey(0px) !important;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5em;
+    margin-left: 0em;
+    display: inline-block;
+    transform: translatex(0px) translatey(0px) !important;
+}
+
+.shelfItems {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    border-color: transparent;
+    height: 26em;
+}
+
+.shlefButtonAddToCard {
+    position: relative;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background-color: #ffffff;
+    transform: translatex(0px) translatey(0px);
+    font-size: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.shlefButtonAddToCard:hover {
+    background-color: #727273;
+    box-shadow: 0 0 5px #b2b2b2;
+    color: #ffffff;
+}
+
+.shelfPrice {
+    opacity: 1;
+    color: #000000;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    width: 138px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: left;
+    min-height: 22px;
+    position: relative;
+    left: 16px;
+}
+
+.shelfSellingPrice {
+    text-decoration: line-through;
+}
+
+
+.shelfProductName {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    text-align: left;
+    width: 188px;
+    min-height: 22px;
+    padding-left: 17px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.shelfLink {
+
+    text-decoration: none;
+}
+
+.shelfProductName {
+    white-space: nowrap;
+    width: 12em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.shelfMeddle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 16px;
+}
+
+.shelfTitle {
+    color: #727273;
+    font-size: 84px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    padding: 0 auto;
+}
+
+.shelfCombo {
+    align-items: center;
+}
+
+.shelfBestPriceCombo {
+    text-align: center;
+    text-shadow: left;
+}
+
+.slideChildrenContainer {
+    margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+    .shelfTitle {
+        font-size: 42px;
+        font-weight: 300;
+    }
+
+    .shelfImage {
+        max-width: 100px;
+        max-height: 120px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+
+    .shelfItems {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        border-color: transparent;
+        height: 23rem;
+    }
+
+    .shlefButtonAddToCard {
+        position: relative;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        font-size: 12px;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .shelfPrice {
+        color: #000000;
+        width:68px;
+        font-weight: 250;
+        min-height: 12px;
+        left: 16px;
+    }
+}
