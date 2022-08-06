@@ -19,7 +19,7 @@
       "fullWidth": true
     }
   },
-  
+
   "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "menu-link",
@@ -112,9 +112,15 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#moda-feminina-camisetas",
+      "menu-item#moda-feminina-calcas",
+      "menu-item#moda-feminina-vestidos",
+      "menu-item#moda-feminina-saias",
+      "menu-item#moda-feminina-sapatos",
+      "menu-item#moda-feminina-esportivos",
+      "menu-item#moda-feminina-acessorios",
+      "menu-item#moda-feminina-underwear",
+      "menu-item#moda-feminina-todos-produtos"
     ],
     "props": {
       "orientation": "vertical"
