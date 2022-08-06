@@ -9,7 +9,8 @@
     "docs": "0.x",
     "node": "6.x",
     "assets": "0.x",
-    "react": "3.x"
+    "react": "3.x",
+    "admin": "0.x"
   },
   "mustUpdateAt": "2018-09-05",
   "scripts": {

@@ -16,6 +16,17 @@
     "vtex.product-specifications": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-specifications@1.1.1/public/@types/vtex.product-specifications",
     "vtex.product-summary": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.80.1/public/@types/vtex.product-summary",
     "vtex.reviews-and-ratings": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.reviews-and-ratings@3.10.1/public/@types/vtex.reviews-and-ratings",
-    "vtex.shelf": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf@1.47.2/public/@types/vtex.shelf"
+    "vtex.shelf": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf@1.47.2/public/@types/vtex.shelf",
+    "@types/node": "^11.12.1",
+    "@types/react": "^16.8.10",
+    "@types/react-intl": "^2.3.17",
+    "@vtex/tsconfig": "^0.4.4",
+    "apollo-client": "^2.4.7",
+    "graphql": "^14.0.2",
+    "prop-types": "^15.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^16.8.6",
+    "react-intl": "^2.7.2",
+    "typescript": "3.9.7"
   }
 }

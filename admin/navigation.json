@@ -1,0 +1,13 @@
+{
+  "section": "orders",
+  "titleId": "admin-combination.navigation.label-group",
+  "subSection": "combination",
+  "searchKeyWordsHelpers": "admin-combination.navigation.search.kws",
+  "subSectionItems": [
+    {
+      "labelId": "admin-combination.navigation.label-table",
+      "path": "/admin/combination",
+      "searchKeyWordsHelpers": "admin-combination.navigation.table.search.kws"
+    }
+  ]
+}

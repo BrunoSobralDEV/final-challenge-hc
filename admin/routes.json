@@ -1,0 +1,10 @@
+{
+  "admin.app.example": {
+    "component": "AdminCombination",
+    "path": "/admin/app/combination"
+  },
+  "admin.app.example-detail": {
+    "component": "AdminCombinationDetail",
+    "path": "/admin/app/combination/:id"
+  }
+}
