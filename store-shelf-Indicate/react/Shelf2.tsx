@@ -34,15 +34,19 @@ const Shelf2 = () => {
     fetch(`/api/catalog_system/pub/products/search?fq=productId:${id}`)
       .then(response => response.json())
       .then(data => {
-        populateCart(data)
-        populateCart(data)
-
+        populateCart(data)  
       });
   }
   const addToCardCombo = (event: any) => {
     console.log('adicinei combo')
     const id = (event.target.id)
     fetch(`/api/catalog_system/pub/products/search?fq=productId:${id}`)
+      .then(response => response.json())
+      .then(data => {
+        console.log(data)
+        populateCart(data)
+      });
+      fetch(`/api/catalog_system/pub/products/search?fq=productId:${id}`)
       .then(response => response.json())
       .then(data => {
         console.log(data)
@@ -87,25 +91,25 @@ const Shelf2 = () => {
       
       {
         additionalInfo: {
-          brandName: data[1].brand,
+          brandName: data[0].brand,
           __typename: 'ItemAdditionalInfo',
         },
-        availability: data[1].items[0].sellers[0].commertialOffer.IsAvaiable,
-        id: data[1].items[1].itemId,
+        availability: data[0].items[0].sellers[0].commertialOffer.IsAvaiable,
+        id: data[0].items[0].itemId,
         imageUrls: {
-          altx: data[1].items[0].images[0].imageUrl,
+          altx: data[0].items[0].images[0].imageUrl,
           __typename: 'ImageUrls',
         },
-        listPrice: data[1].items[1].sellers[0].commertialOffer.ListPrice,
+        listPrice: data[0].items[0].sellers[0].commertialOffer.ListPrice,
         measurementUnit: data[0].items[0].measurementUnit,
-        name: data[1].productName,
-        price: data[1].items[1].sellers[0].commertialOffer.price,
-        productId: data[1].productId,
+        name: data[0].productName,
+        price: data[0].items[0].sellers[0].commertialOffer.price,
+        productId: data[0].productId,
         quantity: 1,
-        seller: data[1].items[1].sellers[0].sellerId,
-        sellingPrice: data[1].items[1].nameComplete,
-        unitMultiplier: data[1].items[1].unitMultiplier,
-        uniqueId: data[1].items[1].itemId,
+        seller: data[0].items[0].sellers[0].sellerId,
+        sellingPrice: data[0].items[0].nameComplete,
+        unitMultiplier: data[0].items[0].unitMultiplier,
+        uniqueId: data[0].items[0].itemId,
         isGift: false,
         __typename: "Item",
       }
@@ -128,8 +132,7 @@ const Shelf2 = () => {
             mobile: 1,
           }}
           showNavigationArrows= "desktopOnly"
-          showPaginationDots= "desktopOnly" >
-          {arrayProducts.map((product: any) => (
+          showPaginationDots= "desktopOnly" >          {arrayProducts.map((product: any) => (
             <ShelfItem
               key={product.id}
               id={product.productId}
