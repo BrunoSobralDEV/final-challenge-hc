@@ -1,58 +1,55 @@
 import React, { useState, useEffect } from "react";
 import { useProduct } from "vtex.product-context";
-import { getSuggestions } from "../../api/api";
+import { getProduct, getSuggestions } from "../../api/api";
 
-import { useQuery } from "react-apollo";
-import findProductInfo from "../../queries/productInfo.graphql";
+const rank = (suggestions, productSku) => {
+  const bestCombination = suggestions.reduce((best, cur) => {
+    if (cur.quantity > best.quantity) return cur;
+    return best;
+  }, suggestions[0]);
+  const { skuId } = bestCombination.skus.find((sku) => sku !== productSku);
+  return skuId;
+};
 
 const ProductRecommendation = () => {
   const [loading, setLoading] = useState(false);
+  const [currentSku, setCurrentSku] = useState(null);
   const [bestSku, setBestSku] = useState(null);
-  // const [currentSku, setCurrentSku] = useState(null);
+  const [recommendedProduct, setRecommendedProduct] = useState(null);
 
-  // 1. Obtém informações do produto atual
+  // 1. Obtém informações do produto atual (pdp)
   const product = useProduct();
   const productSku = product?.selectedItem?.itemId;
-  // setCurrentSku(productSku);
-  console.log("produto", product);
 
-  // Obtém a melhor sugestão, armazena somente o SKU
-  const rank = (suggestions) => {
-    const bestCombination = suggestions.reduce((best, cur) => {
-      if (cur.quantity > best.quantity) return cur;
-      return best;
-    }, suggestions[0]);
-    const { skuId } = bestCombination.skus.find((sku) => sku !== productSku);
-    console.log("melhor", skuId);
-    setBestSku(skuId);
-  };
-
-  // 2. Obter sugestões de produtos
+  // 2. Obtém sugestões de produtos via AWS
   useEffect(() => {
-    if (!product) return;
-    console.log("sku updated");
+    // Evita chamar várias vezes a API
+    if (!product || productSku === currentSku || loading) return;
 
-    const handleSku = async (sku) => {
-      // Evitar chamar várias vezes a API da AWS na mesma página
-      // if (loading) return;
-      // setLoading(true);
-      const suggestions = await getSuggestions(sku);
-      console.log("todos", suggestions);
-      rank(suggestions);
+    const reset = () => {
+      setRecommendedProduct(null);
+      setBestSku(null);
     };
 
-    handleSku(productSku);
-  });
+    setLoading(true);
+    getSuggestions(productSku).then((data) => {
+      if (data.length === 0) reset();
+      else setBestSku(rank(data, productSku));
+      setCurrentSku(productSku);
+      setLoading(false);
+    });
+  }, [productSku]);
 
-  // Problema: como esperar a AWS retornar o SKU recomendado,
-  // pra então fazer a query no Graphql
-  const { data } = useQuery(findProductInfo, {
-    variables: { field: "sku", value: bestSku },
-    ssr: false,
-  });
-  console.log("data", { data });
+  // 3. Obtém informação do produto recomendado via API da VTEX
+  useEffect(() => {
+    if (!bestSku) return;
+    getProduct(bestSku).then((data) => setRecommendedProduct(data));
+  }, [bestSku]);
 
-  return <h1>UI muito legal</h1>;
+  if (recommendedProduct) {
+    return <h1>UI muito legal</h1>;
+  }
+  return <h1>No combinations found (temp)</h1>;
 };
 
 export default ProductRecommendation;
