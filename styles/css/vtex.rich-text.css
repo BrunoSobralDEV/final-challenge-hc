@@ -5,17 +5,14 @@
 }
 
 .container--shelfTitle {
+  font-weight: 800;
   font-weight: bold;
-  padding-left: 7rem;
-  padding-top: 2rem;
-  color: #000;
-  justify-content: left;
+  color: #282828;
+   justify-content: left;
   text-align: center;
 }
 
-.headingLevel2--shelfTitle {
-  font-weight: 800;
-}
+
 
 .container--deals .paragraph {
   margin: 0;
@@ -73,12 +70,8 @@
 
 .listItem{
   list-style-type: none;
+}
 
-}
-.heading--title,
-.heading-level-2{
-  color: #080814a9;
-}
 
 .link{
   color: black;
