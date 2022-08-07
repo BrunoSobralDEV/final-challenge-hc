@@ -2,12 +2,16 @@ import React, { useState, useEffect } from "react";
 import { useProduct } from "vtex.product-context";
 import { getProduct, getSuggestions } from "../../api/api";
 import ShelfContainer from "./ShelfContainer";
+import { useCssHandles } from "vtex.css-handles";
+
+const CSS_HANDLES = ["slider"];
 
 const ProductRecommendation = () => {
   const [loading, setLoading] = useState(false);
   const [currentSku, setCurrentSku] = useState(null);
   const [bestSku, setBestSku] = useState(null);
   const [recommendedProduct, setRecommendedProduct] = useState(null);
+  const { handles } = useCssHandles(CSS_HANDLES);
 
   // 1. Obtém informações do produto atual (pdp)
   const product = useProduct();
@@ -62,7 +66,7 @@ const ProductRecommendation = () => {
 
   if (recommendedProduct) {
     return (
-      <div>
+      <div className={handles.slider}>
         <h1>Quem comprou, comprou também</h1>
         <ShelfContainer
           id={product?.selectedItem?.itemId}

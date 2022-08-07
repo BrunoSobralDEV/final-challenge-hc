@@ -43,7 +43,7 @@ const ShelfItem = ({
   const { addItems } = useOrderItems();
   const [countProd1, setCountProd1] = useState(0);
   const [countProd2, setCountProd2] = useState(0);
-  const handles = useCssHandles(CSS_HANDLES);
+  const { handles } = useCssHandles(CSS_HANDLES);
 
   const addToCart = (skuId, incrementCount, counter) => {
     const item = [
@@ -79,50 +79,62 @@ const ShelfItem = ({
   };
 
   return (
-    <div>
-      <div>
-        <a href={linkURL}>
-          <div>
-            <img src={imageURL} alt={name} />
+    <div className={handles.shelfItems}>
+      <div className={handles.shelfItem}>
+        <a href={linkURL} className={handles.shelfLink}>
+          <div className={handles.shelfImages}>
+            <img src={imageURL} alt={name} className={handles.shelfImage} />
           </div>
         </a>
-        <h2>{name}</h2>
-        <div>
-          <p>{formatPrice(listPrice)}</p>
+        <h2 className={handles.shelfProductName}>{name}</h2>
+        <div className={handles.shelfPrice}>
+          <p className={handles.shelfSellingPrice}>{formatPrice(listPrice)}</p>
         </div>
         <button
           id={id}
           onClick={() => addToCart(id, setCountProd1, countProd1)}
+          className={handles.shlefButtonAddToCard}
         >
           ADICIONAR AO CARRINHO
         </button>
       </div>
 
-      <div>
-        <h1>+</h1>
+      <div className={handles.shelfMeddle}>
+        <h1 className={handles.shelfPlus}>+</h1>
       </div>
 
-      <div className="product">
-        <a href={linkURL2}>
-          <div>
-            <img src={imageURL2} alt={name2} />
+      <div className={handles.shelfItem}>
+        <a href={linkURL2} className={handles.shelfLink}>
+          <div className={handles.shelfImages}>
+            <img src={imageURL2} alt={name2} className={handles.shelfImage} />
           </div>
         </a>
-        <h2>{name2}</h2>
-        <div>
-          <p>{formatPrice(listPrice2)}</p>
+        <h2 className={handles.shelfProductName}>{name2}</h2>
+        <div className={handles.shelfPrice}>
+          <p className={handles.shelfSellingPrice}>{formatPrice(listPrice2)}</p>
         </div>
         <button
           id={id2}
           onClick={() => addToCart(id2, setCountProd2, countProd2)}
+          className={handles.shlefButtonAddToCard}
         >
           ADICIONAR AO CARRINHO
         </button>
       </div>
 
-      <div>
-        <p>{formatPrice(listPrice + listPrice2)}</p>
-        <button id={id} onClick={addToCartCombo}>
+      <div className={handles.shelfMeddle}>
+        <h1 className={handles.shelfPlus}>=</h1>
+      </div>
+
+      <div className={handles.shelfCombo}>
+        <p className={handles.shelfBestPriceCombo}>
+          {formatPrice(listPrice + listPrice2)}
+        </p>
+        <button
+          id={id}
+          onClick={addToCartCombo}
+          className={handles.shlefButtonAddToCard}
+        >
           Adicionar este <br /> combo ao carrinho
         </button>
       </div>
