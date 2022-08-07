@@ -1,6 +1,10 @@
+.container{
+  max-width: 210px;
+  max-width: 415px;
+}
 .shelfImage {
-  max-width: 150px;
-  max-height: 180px;
+  max-width: 250px;
+  max-height: 280px;
   height: 250px !important;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -34,6 +38,7 @@
 }
 
 .shlefButtonAddToCard {
+  align-items:center;
   position: relative;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
@@ -42,8 +47,8 @@
   background-color: #ffffff;
   transform: translatex(0px) translatey(0px);
   font-size: 12px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -62,7 +67,7 @@
   width: 138px;
   font-weight: 500;
   text-decoration: none;
-  text-align: left;
+  text-align: center;
   min-height: 22px;
   position: relative;
   left: 16px;
@@ -75,23 +80,20 @@
 .shelfProductName {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  text-align: left;
+  text-align: center;
   width: 188px;
   min-height: 22px;
   padding-left: 17px;
   font-size: 15px;
   text-decoration: none;
-}
-
-.shelfLink {
-  text-decoration: none;
-}
-
-.shelfProductName {
   white-space: nowrap;
   width: 12em;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.shelfLink {
+  text-decoration: none;
 }
 
 .shelfMeddle {
@@ -102,9 +104,9 @@
 }
 
 .shelfTitle {
-  color: #727273;
+  color: #000000;
   font-size: 84px;
-  font-weight: 600;
+  font-weight: 300;
   position: relative;
   text-align: center;
   padding: 0 auto;
@@ -136,6 +138,10 @@
     border-top-right-radius: 16px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
+  }
+  .shelfItem{
+    align-items: center;
+    text-align: center;
   }
 
   .shelfItems {
