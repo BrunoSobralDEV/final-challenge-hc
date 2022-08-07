@@ -2,16 +2,13 @@ import React, { useState, useEffect } from "react";
 import { useProduct } from "vtex.product-context";
 import { getProduct, getSuggestions } from "../../api/api";
 import ShelfContainer from "./ShelfContainer";
-import { useCssHandles } from "vtex.css-handles";
-
-const CSS_HANDLES = ["slider"];
+import style from "./styles.css";
 
 const ProductRecommendation = () => {
   const [loading, setLoading] = useState(false);
   const [currentSku, setCurrentSku] = useState(null);
   const [bestSku, setBestSku] = useState(null);
   const [recommendedProduct, setRecommendedProduct] = useState(null);
-  const { handles } = useCssHandles(CSS_HANDLES);
 
   // 1. Obtém informações do produto atual (pdp)
   const product = useProduct();
@@ -83,18 +80,18 @@ const ProductRecommendation = () => {
 
   if (recommendedProduct) {
     return (
-      <div className={handles.slider}>
-        <h1>Quem comprou, comprou também</h1>
+      <div className={style.slider}>
+        <h1 className={style.shelfTitle}>Quem comprou, comprou também</h1>
         <ShelfContainer
           id={product?.selectedItem?.itemId}
-          linkURL={`/${product?.product?.linkText}/p`}
+          linkURL={`/${product?.product?.linkText}/p?skuId=${productSku}`}
           imageURL={product?.selectedItem?.images[0]?.imageUrl}
           name={product?.product?.productName}
           listPrice={
             product?.selectedItem?.sellers[0]?.commertialOffer?.ListPrice
           }
           id2={bestSku}
-          linkURL2={recommendedProduct?.link}
+          linkURL2={`${recommendedProduct?.link}?skuId=${bestSku}`}
           imageURL2={
             recommendedProduct.items.find(({ itemId }) => itemId === bestSku)
               ?.images[0]?.imageUrl
