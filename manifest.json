@@ -67,7 +67,8 @@
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x",
     "atmosphere.tendencies": "0.x",
-    "vtex.product-context": "0.x"
+    "vtex.product-context": "0.x",
+    "vtex.order-items": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"
