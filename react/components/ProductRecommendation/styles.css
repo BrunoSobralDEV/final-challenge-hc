@@ -1,10 +1,12 @@
-.slider {
+.recSlider {
   flex-direction: row;
   margin: 0 auto 100px;
   text-align: center;
+  width: 100%;
+  padding: 0 !important;
 }
 
-.shelfItems {
+.recItems {
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -13,12 +15,12 @@
 }
 
 @media (max-width: 768px) {
-  .shelfItems {
+  .recItems {
     flex-wrap: wrap;
   }
 }
 
-.shelfItem {
+.recItem {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,16 +29,16 @@
   width: 250px;
 }
 
-.shelfItem .shelfLink:nth-child(2) {
+.recItem .recLink:nth-child(2) {
   justify-self: flex-start;
 }
 
-.shelfContent {
+.recContent {
   display: flex;
   flex-direction: column;
 }
 
-.shelfImage {
+.recImage {
   width: 100%;
   object-fit: cover;
   border-top-left-radius: 16px;
@@ -46,7 +48,7 @@
   aspect-ratio: 0.8;
 }
 
-.shelfProductName {
+.recProductName {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -55,12 +57,12 @@
   word-break: break-word;
 }
 
-.shelfLink {
+.recLink {
   text-decoration: none;
   color: unset;
 }
 
-.shelfPrice {
+.recPrice {
   opacity: 1;
   color: #000000;
   background-position-x: 0;
@@ -70,11 +72,11 @@
   text-align: left;
 }
 
-.shelfSellingPrice {
+.recSellingPrice {
   text-align: center;
 }
 
-.shelfButtonAddToCart {
+.recButtonAddToCart {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -86,25 +88,26 @@
   border: 0;
   padding: 10px 12px;
   font-size: 14px;
+  width: 100%;
 }
 
-.shelfButtonAddToCart:hover {
+.recButtonAddToCart:hover {
   background-color: #03b085;
   color: #ffffff;
 }
 
-.shelfPlus {
+.recPlus {
   font-size: 48px;
 }
 
-.shelfMeddle {
+.recMeddle {
   display: flex;
   flex-direction: column;
   top: 16px;
   margin-bottom: 150px;
 }
 
-.shelfTitle {
+.recTitle {
   color: #727273;
   font-size: 42px;
   font-weight: 600;
@@ -113,27 +116,59 @@
   margin-bottom: 50px;
 }
 
-.shelfCTA {
+.recCTA {
   font-size: 24px;
 }
 
+@keyframes slideUp {
+  from {
+    bottom: -20px;
+    opacity: 0;
+  }
+  to {
+    bottom: 4px;
+    opacity: 1;
+  }
+}
+
+.recNotification {
+  position: fixed;
+  bottom: 4px;
+  left: 18px;
+  animation: slideUp 0.15s ease-out;
+  z-index: 1000;
+}
+
+.recNotificationText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  background-color: #03c998;
+  color: #ffffff;
+  padding: 10px 12px;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 4px 1px #727273;
+}
+
 @media (max-width: 1024px) {
-  .shelfTitle {
+  .recTitle {
     font-size: 36px;
   }
 }
 
-.shelfCombo {
+.recCombo {
   align-items: center;
   margin-bottom: 150px;
   padding: 0 14px;
 }
 
-.shelfCombo .shelfButtonAddToCart {
+.recCombo .recButtonAddToCart {
   width: 300px;
 }
 
-.shelfBestPriceCombo {
+.recBestPriceCombo {
   text-align: center;
   font-size: 24px;
   font-weight: 700;
@@ -144,18 +179,18 @@
 }
 
 @media (max-width: 1025px) {
-  .shelfItem {
+  .recItem {
     width: 200px;
   }
 }
 
 @media (max-width: 768px) {
-  .shelfTitle {
+  .recTitle {
     font-size: 42px;
     font-weight: 300;
   }
 
-  .shelfItems {
+  .recItems {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -163,7 +198,7 @@
     align-items: center;
   }
 
-  .shelfImage {
+  .recImage {
     max-width: 100px;
     height: auto;
     border-top-left-radius: 16px;
@@ -172,7 +207,7 @@
     border-bottom-right-radius: 16px;
   }
 
-  .shelfPrice {
+  .recPrice {
     color: #000000;
     width: 68px;
     font-weight: 250;
@@ -180,7 +215,7 @@
     left: 16px;
   }
 
-  .shelfButtonAddToCart {
+  .recButtonAddToCart {
     border-radius: 12px;
     font-size: 14px;
     padding: 4px;
@@ -192,49 +227,49 @@
     margin-bottom: 50px;
   }
 
-  .shelfTitle {
+  .recTitle {
     font-size: 24px;
     font-weight: 600;
     margin: 0;
   }
 
-  .shelfItems {
+  .recItems {
     display: block;
     padding: 30px;
   }
 
-  .shelfItem {
+  .recItem {
     flex-direction: row;
     width: 100%;
     height: auto;
     justify-content: space-between;
   }
 
-  .shelfContent {
+  .recContent {
     flex-direction: row;
     gap: 20px;
   }
 
-  .shelfImage {
+  .recImage {
     max-width: unset;
     width: 80px;
   }
 
-  .shelfNamePriceContainer {
+  .recNamePriceContainer {
     display: flex;
     flex-direction: column;
   }
 
-  .shelfProductName {
+  .recProductName {
     text-align: left;
     margin-top: 15px;
   }
 
-  .shelfButtonContainer {
+  .recButtonContainer {
     display: block;
   }
 
-  .shelfButtonAddToCart {
+  .recButtonAddToCart {
     width: 90px;
     height: max-content;
     padding: 11px 7px;
@@ -243,28 +278,28 @@
     margin-top: 10px;
   }
 
-  .shelfSellingPrice {
+  .recSellingPrice {
     margin: 0;
   }
 
-  .shelfMeddle {
+  .recMeddle {
     margin: 0;
   }
 
-  .shelfPlus {
+  .recPlus {
     font-size: 36px;
     margin: 0;
   }
 
-  .shelfCTA {
+  .recCTA {
     margin: 0;
   }
 
-  .shelfBestPriceCombo {
+  .recBestPriceCombo {
     margin: 10px 0;
   }
 
-  .shelfCombo .shelfButtonAddToCart {
+  .recCombo .recButtonAddToCart {
     font-size: 14px;
     font-weight: 600;
   }

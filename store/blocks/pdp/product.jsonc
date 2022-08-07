@@ -3,7 +3,7 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "product-recommendation",
+      "flex-layout.row#product-recommendation",
       "flex-layout.row#description",
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
@@ -26,6 +26,12 @@
       "marginTop": 4
     },
     "children": ["breadcrumb"]
+  },
+  "flex-layout.row#product-recommendation": {
+    "children": ["product-recommendation"],
+    "props": {
+      "fullWidth": true
+    }
   },
   "flex-layout.row#description": {
     "props": {
