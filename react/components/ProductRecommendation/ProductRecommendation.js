@@ -88,7 +88,7 @@ const ProductRecommendation = () => {
         <ShelfContainer
           id={product?.selectedItem?.itemId}
           linkURL={`/${product?.product?.linkText}/p`}
-          imageURL={product?.product?.items[0]?.images[0]?.imageUrl}
+          imageURL={product?.selectedItem?.images[0]?.imageUrl}
           name={product?.product?.productName}
           listPrice={
             product?.selectedItem?.sellers[0]?.commertialOffer?.ListPrice
