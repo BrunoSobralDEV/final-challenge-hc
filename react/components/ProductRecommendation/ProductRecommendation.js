@@ -52,7 +52,9 @@ const ProductRecommendation = () => {
       if (cur.quantity > best.quantity) return cur;
       return best;
     }, suggestions[0]);
-    const { skuId } = bestCombination.skus.find((sku) => sku !== productSku);
+    const { skuId } = bestCombination.skus.find(
+      (sku) => sku.skuId !== productSku
+    );
     console.log("hc3 - Recommended SKU: ", skuId);
     setBestSku(skuId);
   };
@@ -68,6 +70,20 @@ const ProductRecommendation = () => {
       setRecommendedProduct(data);
     });
   }, [bestSku]);
+
+  if (
+    (product &&
+      product?.selectedItem?.sellers[0]?.commertialOffer?.AvailableQuantity ===
+        0) ||
+    (recommendedProduct &&
+      recommendedProduct.items.find(({ itemId }) => itemId === bestSku)
+        ?.sellers[0]?.commertialOffer?.AvailableQuantity === 0)
+  ) {
+    {
+      console.log("not in stock");
+    }
+    return <></>;
+  }
 
   if (recommendedProduct) {
     return (
