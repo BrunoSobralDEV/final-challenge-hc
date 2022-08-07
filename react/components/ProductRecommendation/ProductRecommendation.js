@@ -27,13 +27,18 @@ const ProductRecommendation = () => {
       console.log("hc3 - New SKU selected: ", productSku);
       setLoading(true);
 
+      const reset = () => {
+        setRecommendedProduct(null);
+        setBestSku(null);
+      };
+
+      reset();
+
       console.log("hc3 - Consuming AWS API...");
       const data = await getSuggestions(sku);
       console.log("hc3 - Suggestions: ", data);
-      if (data.length === 0) {
-        setRecommendedProduct(null);
-        setBestSku(null);
-      } else rank(data);
+      if (data.length === 0) reset();
+      else rank(data);
       setCurrentSku(productSku);
       setLoading(false);
     };
