@@ -15,22 +15,25 @@
 }
 
 .slider {
-  display: flex;
   flex-direction: row;
-  padding-left: 5em;
-  margin-left: 0em;
-  display: inline-block;
-  transform: translatex(0px) translatey(0px) !important;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .shelfItems {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  text-align: center;
+  justify-content: center;
   align-items: center;
-  border-color: transparent;
   height: 26em;
+}
+
+.shelfItem {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
 }
 
 .shlefButtonAddToCard {
@@ -64,17 +67,14 @@
   color: #000000;
   background-position-x: 0%;
   background-position-y: 0%;
-  width: 138px;
   font-weight: 500;
   text-decoration: none;
   text-align: left;
-  min-height: 22px;
   position: relative;
-  left: 16px;
 }
 
 .shelfSellingPrice {
-  text-decoration: line-through;
+  text-align: center;
 }
 
 .shelfProductName {
@@ -93,10 +93,10 @@
 }
 
 .shelfProductName {
-  white-space: nowrap;
+  text-align: center;
   width: 12em;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-break: break-word;
+  flex-grow: 1;
 }
 
 .shelfMeddle {

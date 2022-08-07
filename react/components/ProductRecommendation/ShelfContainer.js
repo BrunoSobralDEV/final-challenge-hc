@@ -108,6 +108,7 @@ const ShelfItem = ({
       </div>
 
       <div className={style.shelfCombo}>
+        <p>Compre os dois por:</p>
         <p className={style.shelfBestPriceCombo}>
           {formatPrice(listPrice + listPrice2)}
         </p>
