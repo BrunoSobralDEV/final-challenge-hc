@@ -17,23 +17,28 @@ const ProductRecommendation = () => {
   const product = useProduct();
   const productSku = product?.selectedItem?.itemId;
 
-  // 2. Obtém sugestões de produtos via AWS
+  const reset = () => {
+    setRecommendedProduct(null);
+    setBestSku(null);
+  };
+
+  // 2. Obtém sugestões de produtos via API da AWS
   useEffect(() => {
     // Evita chamar várias vezes a API
     if (!product || productSku === currentSku || loading) return;
 
     const handleSku = async (sku) => {
-      console.log("hc3 - Current product: ", product);
-      console.log("hc3 - New SKU selected: ", productSku);
+      console.log("ScratStore - Current product: ", product);
+      console.log("ScratStore - New SKU selected: ", productSku);
       setLoading(true);
+      reset();
 
-      console.log("hc3 - Consuming AWS API...");
+      console.log("ScratStore - Consuming AWS API...");
       const data = await getSuggestions(sku);
-      console.log("hc3 - Suggestions: ", data);
-      if (data.length === 0) {
-        setRecommendedProduct(null);
-        setBestSku(null);
-      } else rank(data);
+      console.log("ScratStore - Suggestions: ", data);
+      if (data.length === 0) reset();
+      else rank(data);
+
       setCurrentSku(productSku);
       setLoading(false);
     };
@@ -41,28 +46,40 @@ const ProductRecommendation = () => {
     handleSku(productSku);
   }, [productSku]);
 
-  // 3. Obtém a melhor sugestão, armazena somente o SKU
+  // 3. Obtém a melhor sugestão e armazena o SKU
   const rank = (suggestions) => {
     const bestCombination = suggestions.reduce((best, cur) => {
       if (cur.quantity > best.quantity) return cur;
       return best;
     }, suggestions[0]);
-    const { skuId } = bestCombination.skus.find((sku) => sku !== productSku);
-    console.log("hc3 - Recommended SKU: ", skuId);
+    const { skuId } = bestCombination.skus.find(
+      (sku) => sku.skuId !== productSku
+    );
+    console.log("ScratStore - Recommended SKU: ", skuId);
     setBestSku(skuId);
   };
 
-  // 4. Obtém informações do produto recomendado via VTEX
+  // 4. Obtém informações do produto recomendado via API da VTEX
   useEffect(() => {
     if (!bestSku) return;
-
-    console.log("hc3 - Consuming VTEX API... ");
+    console.log("ScratStore - Consuming VTEX API... ");
     getProduct(bestSku).then((data) => {
-      console.log("zzz", data);
-      console.log("hc3 - Recommended Product: ", data);
+      console.log("ScratStore - Recommended Product: ", data);
       setRecommendedProduct(data);
     });
   }, [bestSku]);
+
+  // Ignorar SKUs indisponíveis para compra
+  if (
+    (product &&
+      product?.selectedItem?.sellers[0]?.commertialOffer?.AvailableQuantity ===
+        0) ||
+    (recommendedProduct &&
+      recommendedProduct.items.find(({ itemId }) => itemId === bestSku)
+        ?.sellers[0]?.commertialOffer?.AvailableQuantity === 0)
+  ) {
+    return <></>;
+  }
 
   if (recommendedProduct) {
     return (
@@ -71,7 +88,7 @@ const ProductRecommendation = () => {
         <ShelfContainer
           id={product?.selectedItem?.itemId}
           linkURL={`/${product?.product?.linkText}/p`}
-          imageURL={product?.product?.items[0]?.images[0]?.imageUrl}
+          imageURL={product?.selectedItem?.images[0]?.imageUrl}
           name={product?.product?.productName}
           listPrice={
             product?.selectedItem?.sellers[0]?.commertialOffer?.ListPrice
