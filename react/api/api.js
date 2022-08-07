@@ -9,12 +9,9 @@ export async function getSuggestions(skuId) {
 }
 
 export async function getProduct(skuId) {
-  console.log("ZZZ", skuId);
   const skuResponse = await fetch(`${vtexSku}/${skuId}`);
   const skuData = await skuResponse.json();
-  console.log("zzz", skuData);
   const productResponse = await fetch(`${vtexProduct}:${skuData?.ProductId}`);
   const productData = await productResponse.json();
-  console.log("zzzzzzzzzzzzz", productData);
   return productData[0];
 }

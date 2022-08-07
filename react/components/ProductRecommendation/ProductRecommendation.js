@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useProduct } from "vtex.product-context";
 import { getProduct, getSuggestions } from "../../api/api";
-import ShelfItem from "./ShelfItem";
+import ShelfContainer from "./ShelfContainer";
 
 const ProductRecommendation = () => {
   const [loading, setLoading] = useState(false);
@@ -61,45 +61,34 @@ const ProductRecommendation = () => {
   }, [bestSku]);
 
   if (recommendedProduct) {
-    // return <h1>UI muito legal</h1>;
     return (
       <div>
         <h1>Quem comprou, comprou também</h1>
-        <ShelfItem
-          key={product?.selectedItem?.itemId}
+        <ShelfContainer
           id={product?.selectedItem?.itemId}
           linkURL={`/${product?.product?.linkText}/p`}
           imageURL={product?.product?.items[0]?.images[0]?.imageUrl}
           name={product?.product?.productName}
-          price={product?.selectedItem?.sellers[0]?.commertialOffer?.Price}
           listPrice={
             product?.selectedItem?.sellers[0]?.commertialOffer?.ListPrice
           }
-        />
-        <div>
-          <h1>+</h1>
-        </div>
-        <ShelfItem
-          key={bestSku}
-          id={bestSku}
-          linkURL={recommendedProduct?.link}
-          imageURL={
-            recommendedProduct.items.filter(({ itemId }) => itemId === bestSku)
-              .images[0].imageUrl
+          id2={bestSku}
+          linkURL2={recommendedProduct?.link}
+          imageURL2={
+            recommendedProduct.items.find(({ itemId }) => itemId === bestSku)
+              ?.images[0]?.imageUrl
           }
-          name={recommendedProduct.productName}
-          listPrice={
-            recommendedProduct.items.filter(({ itemId }) => itemId === bestSku)
-              .sellers[0].commertialOffer.ListPrice
+          name2={recommendedProduct.productName}
+          listPrice2={
+            recommendedProduct.items.find(({ itemId }) => itemId === bestSku)
+              ?.sellers[0]?.commertialOffer?.ListPrice
           }
-          // listPrice={
-          //   product?.selectedItem?.sellers[0]?.commertialOffer?.ListPrice
-          // }
         />
       </div>
     );
   }
-  return <h1>No combinations found</h1>;
+
+  return <></>;
 };
 
 export default ProductRecommendation;
