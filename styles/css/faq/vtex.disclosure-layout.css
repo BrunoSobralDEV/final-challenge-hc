@@ -11,7 +11,7 @@
 
 .trigger--question:focus,
 .trigger--question:focus :global(.vtex-rich-text-0-x-paragraph) {
-  color: #0F3E99;
+  color: rgb(12, 2, 2);
 }
 
 .trigger :global(.vtex-store-icons-0-x-caretIcon) {

@@ -70,7 +70,24 @@
   font-weight: 700;
 }
 
-@media only screen and (max-width: 640px) {
+
+.listItem{
+  list-style-type: none;
+
+}
+.heading--title,
+.heading-level-2{
+  color: #080814a9;
+}
+
+.link{
+  color: black;
+  text-decoration: none;
+}
+
+
+@media only screen and (min-width: 640px) {
+
   .container--question .strong {
     font-size: 40px;
     line-height: 3rem;
