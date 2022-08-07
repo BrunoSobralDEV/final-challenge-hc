@@ -80,7 +80,7 @@ const Shelf2 = () => {
           itemsPerPage={{
             desktop: 5,
             tablet: 3,
-            mobile: 3,
+            mobile: 2,
           }}
           showNavigationArrows= "desktopOnly"
           showPaginationDots= "never" > 
