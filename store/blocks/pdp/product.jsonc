@@ -3,6 +3,7 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
+      "product-recommendation",
       "flex-layout.row#description",
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
@@ -11,7 +12,6 @@
       "product-questions-and-answers"
     ]
   },
-
 
   "flex-layout.row#specifications-title": {
     "children": ["rich-text#specifications"]
@@ -137,10 +137,8 @@
     "props": {
       "marginTop": 4,
       "marginBottom": 7
-
     },
     "children": ["add-to-cart-button"]
-
   },
   "flex-layout.row#product-availability": {
     "props": {
