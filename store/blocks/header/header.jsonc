@@ -50,6 +50,19 @@
       "flex-layout.row#4-desktop"
     ]
   },
+  "minicart.v2": {
+    "props": {
+      "MinicartIcon": "icon-cart#minicart-icon"
+    },
+    "children": []
+  },
+  "icon-cart#minicart-icon": {
+    "props": {
+      "blockClass": "minicartIconSize",
+      "size": 40,
+      "width": 50
+    }
+  },
   "flex-layout.row#4-desktop": {
     "props": {
       "blockClass": "main-header",
@@ -124,10 +137,16 @@
   },
   "login": {
     "props": {
-      "emailAndPasswordTitle": "LOG-IN",
-      "accessCodeTitle": "Acess Code LOG-IN",
-      "emailPlaceholder": "e-mail",
-      "passwordPlaceholder": "password",
+      "optionsTitle": "Cadastre-se ou faça login para aproveitar",
+      "emailAndPasswordTitle": "Acessar com e-mail e senha",
+      "accessCodeTitle": "Receba um código de acesso via e-mail",
+      "emailPlaceholder": "Digite seu e-mail",
+      "passwordPlaceholder": "Digite sua senha",
+      "acessCodePlaceholder": "Código enviado para o seu e-mail",
+      "showPasswordVerificationIntoTooltip": false,
+      "iconLabel": "minha conta",
+      "accountOptionsButtonBehavior": "link",
+      "showIconProfile": true,
       "showPasswordVerificationIntoTooltip": true
     }
   },
