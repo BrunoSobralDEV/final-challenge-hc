@@ -67,7 +67,6 @@
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x",
     "atmosphere.tendencies": "0.x",
-    "vtex.shelf-indicate": "0.x",
     "vtex.product-context": "0.x",
     "vtex.order-items": "0.x"
   },
