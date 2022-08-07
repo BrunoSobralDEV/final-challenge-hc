@@ -1,11 +1,9 @@
 .container {
-  max-width: 96rem;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  max-width: 95%;
 }
 
 .inlineContainer {
-  margin-left: 0rem;
+  margin-left: 0px;
 }
 
 .star--filled {
@@ -14,4 +12,8 @@
 
 .star--empty {
   color: #FFB100;
+}
+
+.loginLink {
+  margin-left: 0px;
 }

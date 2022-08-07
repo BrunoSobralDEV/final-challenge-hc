@@ -11,12 +11,14 @@
       "product-questions-and-answers"
     ]
   },
+
+
   "flex-layout.row#specifications-title": {
     "children": ["rich-text#specifications"]
   },
   "rich-text#specifications": {
     "props": {
-      "text": "##### Product Specifications"
+      "text": "##### Especificações do Produto"
     }
   },
   "flex-layout.row#product-breadcrumb": {
@@ -135,10 +137,11 @@
     "props": {
       "marginTop": 4,
       "marginBottom": 7
+
     },
     "children": ["add-to-cart-button"]
-  },
 
+  },
   "flex-layout.row#product-availability": {
     "props": {
       "colGap": 7,

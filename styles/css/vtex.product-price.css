@@ -15,8 +15,11 @@
 }
 
 .installments {
-  color: #727273;
+  color: #03b085;
   margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .savings {
@@ -76,4 +79,11 @@
   vertical-align: baseline;
   color: #FFFFFF;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+.currencyContainer--fullPrice {
+  color: #03b085;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
 }
