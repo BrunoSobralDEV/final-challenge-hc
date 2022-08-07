@@ -40,21 +40,22 @@
   .shlefButtonAddToCard {
     align-items:center;
     position: relative;
+    border-color:#03c998;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
-    background-color: #ffffff;
+    background-color: #03c998;
     transform: translatex(0px) translatey(0px);
     font-size: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 8px;
     padding-bottom: 8px;
   }
   
   .shlefButtonAddToCard:hover {
-    background-color: #727273;
+    background-color: #009e77;
     box-shadow: 0 0 5px #b2b2b2;
     color: #ffffff;
   }
@@ -104,13 +105,12 @@
   }
   
   .shelfTitle {
-    color: #000000;
-    font-size: 84px;
-    font-weight: 300;
-    position: relative;
-    text-align: center;
-    padding: 0 auto;
-  }
+    font-size: 2.5rem;
+    margin-left: 6.25rem;
+    font-weight: bold;
+    color: #282828;
+    text-align: left;
+    }
   
   .shelfCombo {
     align-items: center;
