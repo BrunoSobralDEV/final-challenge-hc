@@ -62,23 +62,27 @@ const ShelfItem = ({
   return (
     <div className={style.shelfItems}>
       <div className={style.shelfItem}>
-        <div className="shelfContent">
+        <div className={style.shelfContent}>
           <a href={linkURL} className={style.shelfLink}>
             <div className={style.shelfImages}>
               <img src={imageURL} alt={name} className={style.shelfImage} />
             </div>
           </a>
-          <a href={linkURL} className={style.shelfLink}>
-            <h2 className={style.shelfProductName}>{name}</h2>
-          </a>
-          <div className={style.shelfPrice}>
-            <p className={style.shelfSellingPrice}>{formatPrice(listPrice)}</p>
+          <div className={style.shelfNamePriceContainer}>
+            <a href={linkURL} className={style.shelfLink}>
+              <h2 className={style.shelfProductName}>{name}</h2>
+            </a>
+            <div className={style.shelfPrice}>
+              <p className={style.shelfSellingPrice}>
+                {formatPrice(listPrice)}
+              </p>
+            </div>
           </div>
         </div>
         <button
           id={id}
           onClick={() => addToCart(id, setCountProd1, countProd1)}
-          className={style.shlefButtonAddToCard}
+          className={style.shelfButtonAddToCart}
         >
           ADICIONAR AO CARRINHO
         </button>
@@ -89,26 +93,32 @@ const ShelfItem = ({
       </div>
 
       <div className={style.shelfItem}>
-        <div className="shelfContent">
+        <div className={style.shelfContent}>
           <a href={linkURL2} className={style.shelfLink}>
             <div className={style.shelfImages}>
               <img src={imageURL2} alt={name2} className={style.shelfImage} />
             </div>
           </a>
-          <a href={linkURL2} className={style.shelfLink}>
-            <h2 className={style.shelfProductName}>{name2}</h2>
-          </a>
-          <div className={style.shelfPrice}>
-            <p className={style.shelfSellingPrice}>{formatPrice(listPrice2)}</p>
+          <div className={style.shelfNamePriceContainer}>
+            <a href={linkURL2} className={style.shelfLink}>
+              <h2 className={style.shelfProductName}>{name2}</h2>
+            </a>
+            <div className={style.shelfPrice}>
+              <p className={style.shelfSellingPrice}>
+                {formatPrice(listPrice2)}
+              </p>
+            </div>
           </div>
         </div>
-        <button
-          id={id2}
-          onClick={() => addToCart(id2, setCountProd2, countProd2)}
-          className={style.shlefButtonAddToCard}
-        >
-          ADICIONAR AO CARRINHO
-        </button>
+        <div className={style.shelfButtonContainer}>
+          <button
+            id={id2}
+            onClick={() => addToCart(id2, setCountProd2, countProd2)}
+            className={style.shelfButtonAddToCart}
+          >
+            ADICIONAR AO CARRINHO
+          </button>
+        </div>
       </div>
 
       <div className={style.shelfMeddle}>
@@ -120,13 +130,15 @@ const ShelfItem = ({
         <p className={style.shelfBestPriceCombo}>
           {formatPrice(listPrice + listPrice2)}
         </p>
-        <button
-          id={id}
-          onClick={addToCartCombo}
-          className={style.shlefButtonAddToCard}
-        >
-          Adicionar este <br /> combo ao carrinho
-        </button>
+        <div className={style.shelfButtonContainer}>
+          <button
+            id={id}
+            onClick={addToCartCombo}
+            className={style.shelfButtonAddToCart}
+          >
+            Adicionar este <br /> combo ao carrinho
+          </button>
+        </div>
       </div>
     </div>
   );

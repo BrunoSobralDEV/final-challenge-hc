@@ -1,17 +1,3 @@
-.shelfImage {
-  width: 100%;
-  object-fit: cover;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-  aspect-ratio: 0.8;
-}
-
-.shelfPlus {
-  font-size: 48px;
-}
-
 .slider {
   flex-direction: row;
   margin: 0 auto 100px;
@@ -20,11 +6,16 @@
 
 .shelfItems {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   align-items: center;
-  height: 26em;
+  height: 500px;
+}
+
+@media (max-width: 768px) {
+  .shelfItems {
+    flex-wrap: wrap;
+  }
 }
 
 .shelfItem {
@@ -37,11 +28,53 @@
 }
 
 .shelfItem .shelfLink:nth-child(2) {
-  flex-grow: 1;
   justify-self: flex-start;
 }
 
-.shlefButtonAddToCard {
+.shelfContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.shelfImage {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  aspect-ratio: 0.8;
+}
+
+.shelfProductName {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  word-break: break-word;
+}
+
+.shelfLink {
+  text-decoration: none;
+  color: unset;
+}
+
+.shelfPrice {
+  opacity: 1;
+  color: #000000;
+  background-position-x: 0;
+  background-position-y: 0;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: left;
+}
+
+.shelfSellingPrice {
+  text-align: center;
+}
+
+.shelfButtonAddToCart {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -55,46 +88,18 @@
   font-size: 14px;
 }
 
-.shlefButtonAddToCard:hover {
+.shelfButtonAddToCart:hover {
   background-color: #03b085;
   color: #ffffff;
 }
 
-.shelfPrice {
-  opacity: 1;
-  color: #000000;
-  background-position-x: 0%;
-  background-position-y: 0%;
-  font-weight: 500;
-  text-decoration: none;
-  text-align: left;
-  position: relative;
-}
-
-.shelfSellingPrice {
-  text-align: center;
-}
-
-.shelfProductName {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  min-height: 22px;
-  font-size: 15px;
-  text-decoration: none;
-  text-align: center;
-  word-break: break-word;
-  flex-grow: 1;
-}
-
-.shelfLink {
-  text-decoration: none;
-  color: unset;
+.shelfPlus {
+  font-size: 48px;
 }
 
 .shelfMeddle {
   display: flex;
   flex-direction: column;
-  position: relative;
   top: 16px;
   margin-bottom: 150px;
 }
@@ -103,9 +108,8 @@
   color: #727273;
   font-size: 42px;
   font-weight: 600;
-  position: relative;
   text-align: center;
-  padding: 0 auto;
+  padding: 0;
   margin-bottom: 50px;
 }
 
@@ -125,13 +129,12 @@
   padding: 0 14px;
 }
 
-.shelfCombo .shlefButtonAddToCard {
+.shelfCombo .shelfButtonAddToCart {
   width: 300px;
 }
 
 .shelfBestPriceCombo {
   text-align: center;
-  text-shadow: left;
   font-size: 24px;
   font-weight: 700;
 }
@@ -152,6 +155,14 @@
     font-weight: 300;
   }
 
+  .shelfItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
   .shelfImage {
     max-width: 100px;
     height: auto;
@@ -161,21 +172,6 @@
     border-bottom-right-radius: 16px;
   }
 
-  .shelfItems {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .shlefButtonAddToCard {
-    position: relative;
-    border-radius: 12px;
-    font-size: 14px;
-    padding: 4px;
-  }
-
   .shelfPrice {
     color: #000000;
     width: 68px;
@@ -183,9 +179,93 @@
     min-height: 12px;
     left: 16px;
   }
+
+  .shelfButtonAddToCart {
+    border-radius: 12px;
+    font-size: 14px;
+    padding: 4px;
+  }
 }
 
-.shelfContent {
-  display: flex;
-  flex-direction: column;
+@media (max-width: 640px) {
+  .slider {
+    margin-bottom: 50px;
+  }
+
+  .shelfTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .shelfItems {
+    display: block;
+    padding: 30px;
+  }
+
+  .shelfItem {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+  }
+
+  .shelfContent {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .shelfImage {
+    max-width: unset;
+    width: 80px;
+  }
+
+  .shelfNamePriceContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shelfProductName {
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  .shelfButtonContainer {
+    display: block;
+  }
+
+  .shelfButtonAddToCart {
+    width: 90px;
+    height: max-content;
+    padding: 11px 7px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  .shelfSellingPrice {
+    margin: 0;
+  }
+
+  .shelfMeddle {
+    margin: 0;
+  }
+
+  .shelfPlus {
+    font-size: 36px;
+    margin: 0;
+  }
+
+  .shelfCTA {
+    margin: 0;
+  }
+
+  .shelfBestPriceCombo {
+    margin: 10px 0;
+  }
+
+  .shelfCombo .shelfButtonAddToCart {
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
