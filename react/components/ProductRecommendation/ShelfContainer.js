@@ -62,14 +62,18 @@ const ShelfItem = ({
   return (
     <div className={style.shelfItems}>
       <div className={style.shelfItem}>
-        <a href={linkURL} className={style.shelfLink}>
-          <div className={style.shelfImages}>
-            <img src={imageURL} alt={name} className={style.shelfImage} />
+        <div className="shelfContent">
+          <a href={linkURL} className={style.shelfLink}>
+            <div className={style.shelfImages}>
+              <img src={imageURL} alt={name} className={style.shelfImage} />
+            </div>
+          </a>
+          <a href={linkURL} className={style.shelfLink}>
+            <h2 className={style.shelfProductName}>{name}</h2>
+          </a>
+          <div className={style.shelfPrice}>
+            <p className={style.shelfSellingPrice}>{formatPrice(listPrice)}</p>
           </div>
-        </a>
-        <h2 className={style.shelfProductName}>{name}</h2>
-        <div className={style.shelfPrice}>
-          <p className={style.shelfSellingPrice}>{formatPrice(listPrice)}</p>
         </div>
         <button
           id={id}
@@ -85,14 +89,18 @@ const ShelfItem = ({
       </div>
 
       <div className={style.shelfItem}>
-        <a href={linkURL2} className={style.shelfLink}>
-          <div className={style.shelfImages}>
-            <img src={imageURL2} alt={name2} className={style.shelfImage} />
+        <div className="shelfContent">
+          <a href={linkURL2} className={style.shelfLink}>
+            <div className={style.shelfImages}>
+              <img src={imageURL2} alt={name2} className={style.shelfImage} />
+            </div>
+          </a>
+          <a href={linkURL2} className={style.shelfLink}>
+            <h2 className={style.shelfProductName}>{name2}</h2>
+          </a>
+          <div className={style.shelfPrice}>
+            <p className={style.shelfSellingPrice}>{formatPrice(listPrice2)}</p>
           </div>
-        </a>
-        <h2 className={style.shelfProductName}>{name2}</h2>
-        <div className={style.shelfPrice}>
-          <p className={style.shelfSellingPrice}>{formatPrice(listPrice2)}</p>
         </div>
         <button
           id={id2}
@@ -108,7 +116,7 @@ const ShelfItem = ({
       </div>
 
       <div className={style.shelfCombo}>
-        <p>Compre os dois por:</p>
+        <p className={style.shelfCTA}>Compre os dois por:</p>
         <p className={style.shelfBestPriceCombo}>
           {formatPrice(listPrice + listPrice2)}
         </p>
