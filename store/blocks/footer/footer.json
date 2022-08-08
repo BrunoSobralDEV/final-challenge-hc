@@ -68,7 +68,7 @@
   },
   "rich-text#footer": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "text": "Esta página foi desenvolvida pelos membros finalistas da casa Atmosphere do Hiring Coders #3",
       "blockClass": "footer"
     }
   },
@@ -109,7 +109,7 @@
   },
   "rich-text#footer-mobile": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "text": "Esta página foi desenvolvida pelos membros finalistas da casa Atmosphere do Hiring Coders #3",
       "blockClass": "footer"
     }
   }
