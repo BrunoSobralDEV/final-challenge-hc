@@ -12,7 +12,7 @@
   - :gear: [Install dependencies](##gear-install_dependencies)
   - :rocket: [Getting Started](##rocket-getting_started)
 - :left_right_arrow: [API](#left_right_arrow-API)
-- :computer: [Techs](#computer-Techs)
+- :computer: [Techs](#computer-techs)
 - :bust_in_silhouette: [Author](#bust_in_silhouette-author)
 - :handshake: [Contributing](#handshake-Contributing)
 - :scroll: [License](#scroll-License)
