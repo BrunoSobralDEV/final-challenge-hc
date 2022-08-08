@@ -9,11 +9,11 @@
 
 - :house: [About](#house-about)
 - :dart: [Installation](#dart-Installation)
-  - :gear: [Install dependencies](##gear-Install_dependencies)
-  - :rocket: [Getting Started](##rocket-Getting_Started)
+  - :gear: [Install dependencies](##gear-install_dependencies)
+  - :rocket: [Getting Started](##rocket-getting_started)
 - :left_right_arrow: [API](#left_right_arrow-API)
-- :computer: [Techs](#Techs-computer)
-- :bust_in_silhouette: [Author](#bust_in_silhouette-Author)
+- :computer: [Techs](#computer-Techs)
+- :bust_in_silhouette: [Author](#bust_in_silhouette-author)
 - :handshake: [Contributing](#handshake-Contributing)
 - :scroll: [License](#scroll-License)
 
