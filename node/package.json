@@ -4,11 +4,7 @@
     "@types/node": "^12.0.0",
     "@vtex/api": "6.45.12",
     "@vtex/tsconfig": "^0.6.0",
-<<<<<<< HEAD
     "atmosphere.scrat": "https://adams5--atmosphere.myvtex.com/_v/private/typings/linked/v1/atmosphere.scrat@0.0.2+build1659979307/public/@types/atmosphere.scrat",
-=======
-    "atmosphere.scrat": "https://llfalcao--atmosphere.myvtex.com/_v/private/typings/linked/v1/atmosphere.scrat@0.0.1+build1659819680/public/_types/react",
->>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
     "atmosphere.tendencies": "http://atmosphere.vtexassets.com/_v/public/typings/v1/atmosphere.tendencies@0.0.1/public/@types/atmosphere.tendencies",
     "typescript": "3.9.7",
     "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.28.0/public/@types/vtex.add-to-cart-button",
@@ -25,10 +21,7 @@
     "vtex.minicart": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.minicart@2.63.5/public/@types/vtex.minicart",
     "vtex.modal-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.modal-layout@0.13.0/public/@types/vtex.modal-layout",
     "vtex.my-account": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.my-account@1.25.0/public/@types/vtex.my-account",
-<<<<<<< HEAD
     "vtex.order-items": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-items@0.13.21/public/@types/vtex.order-items",
-=======
->>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
     "vtex.order-placed": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-placed@2.16.0/public/@types/vtex.order-placed",
     "vtex.product-bookmark-interfaces": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-bookmark-interfaces@1.0.1/public/@types/vtex.product-bookmark-interfaces",
     "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context",
@@ -45,14 +38,8 @@
     "vtex.product-specification-badges": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-specification-badges@0.3.0/public/@types/vtex.product-specification-badges",
     "vtex.product-specifications": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-specifications@1.1.1/public/@types/vtex.product-specifications",
     "vtex.product-summary": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.80.1/public/@types/vtex.product-summary",
-<<<<<<< HEAD
     "vtex.responsive-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-layout@0.1.2/public/@types/vtex.responsive-layout",
     "vtex.reviews-and-ratings": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.reviews-and-ratings@3.10.2/public/@types/vtex.reviews-and-ratings",
-=======
-    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime",
-    "vtex.responsive-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-layout@0.1.2/public/@types/vtex.responsive-layout",
-    "vtex.reviews-and-ratings": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.reviews-and-ratings@3.10.1/public/@types/vtex.reviews-and-ratings",
->>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
     "vtex.rich-text": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.15.0/public/@types/vtex.rich-text",
     "vtex.search-result": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.118.14/public/@types/vtex.search-result",
     "vtex.shelf": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf@1.47.2/public/@types/vtex.shelf",

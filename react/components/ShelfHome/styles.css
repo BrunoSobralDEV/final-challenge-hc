@@ -125,19 +125,11 @@
     text-align: center;
     width: 130px;
     height: 80px;
-<<<<<<< HEAD
     padding-left: 0;    
     overflow: hidden;    
   }
   .shelfTitle {
     font-size: 42px;
-=======
-    padding-left: 0;
-    overflow: hidden;
-  }
-  .shelfTitle {
-    font-size: 34px;
->>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
     font-weight: 300;
     }
 
@@ -187,8 +179,4 @@
     margin-bottom: 0.6rem;
     margin-left: 13px;
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
