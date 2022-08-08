@@ -17,6 +17,10 @@
   align-self: center
 }
 
+.galleryLayoutSwitcher--scrat-gallery {
+  display: none;
+}
+
 .galleryItem--list {
   border-bottom: 1px #E7E9EE solid;
 }

@@ -1,7 +1,7 @@
 {
   "product-summary.shelf": {
     "children": [
-      "stack-layout#prodsum",
+      "product-summary-image",
       "product-summary-name",
       "flex-layout.col#productRating",
       "product-summary-space",
@@ -21,8 +21,7 @@
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
-      "vtex.product-highlights@2.x:product-highlights#collection",
-      "modal-trigger#quickview" // Check quickview.jsonc
+      "vtex.product-highlights@2.x:product-highlights#collection"
     ]
   },
 
