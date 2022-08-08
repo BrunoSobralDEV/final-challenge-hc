@@ -125,11 +125,11 @@
     text-align: center;
     width: 130px;
     height: 80px;
-    padding-left: 0;    
-    overflow: hidden;    
+    padding-left: 0;
+    overflow: hidden;
   }
   .shelfTitle {
-    font-size: 42px;
+    font-size: 34px;
     font-weight: 300;
     }
 
