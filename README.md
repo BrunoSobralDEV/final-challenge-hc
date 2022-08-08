@@ -7,14 +7,14 @@
 # :pushpin: Table of Contents
 
 - :house: [About](#about)
-- :dart: [Installation](#Installation)
-  - :gear: [Install dependencies](##Install_dependencies)
-  - :rocket: [Getting Started](##Getting_Started)
-- :left_right_arrow: [API](#API)
-- :computer: [Techs](#Techs)
-- :bust_in_silhouette: [Author](#Author)
-- :handshake: [Contributing](#Contributing)
-- :scroll: [License](#License)
+- :dart: [Installation](#Installation-dart)
+  - :gear: [Install dependencies](##Install_dependencies-gear)
+  - :rocket: [Getting Started](##Getting_Started-rocket)
+- :left_right_arrow: [API](#API-left_right_arrow)
+- :computer: [Techs](#Techs-computer)
+- :bust_in_silhouette: [Author](#Author-bust_in_silhouette)
+- :handshake: [Contributing](#Contributing-handshake)
+- :scroll: [License](#License-scroll)
 
 ---
 
