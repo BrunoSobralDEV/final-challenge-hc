@@ -1,0 +1,26 @@
+.openIconContainer {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.minicartContainer,
+.minicartWrapperContainer {
+  display: flex;
+  margin-left: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartIcon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}

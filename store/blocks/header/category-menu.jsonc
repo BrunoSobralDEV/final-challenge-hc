@@ -7,7 +7,10 @@
       "menu-item#moda-feminina-camisetas",
       "menu-item#moda-feminina-calcas",
       "menu-item#moda-feminina-vestidos",
+<<<<<<< HEAD
       "menu-item#moda-feminina-saias",
+=======
+>>>>>>> 063fa78 (Finalização Header e footer)
       "menu-item#moda-feminina-sapatos",
       "menu-item#moda-feminina-esportivos",
       "menu-item#moda-feminina-acessorios",
@@ -149,5 +152,34 @@
         "text": "Ver Tudo"
       }
     }
+<<<<<<< HEAD
   }
 }
+=======
+  },
+  "vtex.menu@2.x:menu#subcategory": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "flex-layout.row#1-desktop"
+    ]
+  },
+  "flex-layout.row#1-desktop": {
+    "props": {
+      "blockClass": "sub-menu-color"
+    },
+    "children": [
+      "menu-item#moda-feminina-camisetas",
+      "menu-item#moda-feminina-calcas",
+      "menu-item#moda-feminina-vestidos",
+      "menu-item#moda-feminina-saias",
+      "menu-item#moda-feminina-sapatos",
+      "menu-item#moda-feminina-esportivos",
+      "menu-item#moda-feminina-acessorios",
+      "menu-item#moda-feminina-underwear",
+      "menu-item#moda-feminina-todos-produtos"
+    ]
+  }
+}
+>>>>>>> 063fa78 (Finalização Header e footer)

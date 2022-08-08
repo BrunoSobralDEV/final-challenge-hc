@@ -4,5 +4,13 @@
   },
   "shelf-home": {
     "component": "ShelfHome"
+<<<<<<< HEAD
   }
 }
+=======
+  },
+  "services": {
+    "component": "Services"
+  }
+}
+>>>>>>> 063fa78 (Finalização Header e footer)

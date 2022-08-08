@@ -1,6 +1,13 @@
 {
   "footer": {
+<<<<<<< HEAD
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+=======
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+>>>>>>> 063fa78 (Finalização Header e footer)
   },
   "footer-layout.desktop": {
     "children": [
@@ -10,6 +17,7 @@
     ]
   },
   "flex-layout.row#footer-1-desktop": {
+<<<<<<< HEAD
     "children": [
       "vtex.menu@2.x:menu#Products",
       "vtex.menu@2.x:menu#footer-clothing",
@@ -25,11 +33,47 @@
     }
   },
 
+=======
+    "props": {
+      "blockClass": "menu-row--bg",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    },
+    "children": [
+      "flex-layout.col#menu-1-desktop",
+      "flex-layout.col#menu-2-desktop",
+      "flex-layout.col#menu-3-desktop",
+      "footer-spacer",
+      "social-networks"
+    ]
+  },
+  "flex-layout.col#menu-1-desktop": {
+    "children": [
+      "menu-item#moda-feminina-camisetas",
+      "menu-item#moda-feminina-calcas",
+      "menu-item#moda-feminina-vestidos"
+    ]
+  },
+  "flex-layout.col#menu-2-desktop": {
+    "children": [
+      "menu-item#moda-feminina-sapatos",
+      "menu-item#moda-feminina-esportivos",
+      "menu-item#moda-feminina-acessorios"
+    ]
+  },
+  "flex-layout.col#menu-3-desktop": {
+    "children": [
+      "menu-item#moda-feminina-underwear",
+      "menu-item#moda-feminina-todos-produtos"
+    ]
+  },
+>>>>>>> 063fa78 (Finalização Header e footer)
   "social-networks": {
     "props": {
       "socialNetworks": [
         {
           "name": "Facebook",
+<<<<<<< HEAD
           "url": "https://www.facebook.com/vtexonline/"
         },
         {
@@ -43,25 +87,61 @@
         {
           "name": "Youtube",
           "url": "https://www.youtube.com/user/VTEXTV"
+=======
+          "url": "https://www.facebook.com/hiringcoders/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/p/CfzJP4KM5Ju/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/hiringcoders"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://youtu.be/k-56hXK0Oqs"
+>>>>>>> 063fa78 (Finalização Header e footer)
         }
       ]
     }
   },
+<<<<<<< HEAD
 
   "flex-layout.row#footer-2-desktop": {
     "children": ["accepted-payment-methods"],
+=======
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "accepted-payment-methods"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "blockClass": "payment-methods"
     }
   },
   "accepted-payment-methods": {
     "props": {
+<<<<<<< HEAD
       "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
     }
   },
 
   "flex-layout.row#footer-3-desktop": {
     "children": ["rich-text#footer"],
+=======
+      "paymentMethods": [
+        "MasterCard",
+        "Visa",
+        "Diners Club"
+      ]
+    }
+  },
+  "flex-layout.row#footer-3-desktop": {
+    "children": [
+      "rich-text#footer"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "blockClass": "credits"
     }
@@ -72,15 +152,28 @@
       "blockClass": "footer"
     }
   },
+<<<<<<< HEAD
 
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#1-footer-mobile",
+=======
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#3-footer-mobile",
+>>>>>>> 063fa78 (Finalização Header e footer)
       "flex-layout.row#2-footer-mobile"
     ]
   },
   "flex-layout.row#2-footer-mobile": {
+<<<<<<< HEAD
     "children": ["flex-layout.col#footer-1-mobile"],
+=======
+    "children": [
+      "flex-layout.col#footer-1-mobile"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "blockClass": "payment-methods",
       "paddingTop": 4,
@@ -105,7 +198,34 @@
       "paddingTop": 4,
       "paddingBottom": 4
     },
+<<<<<<< HEAD
     "children": ["vtex.menu@2.x:menu#footer-mobile"]
+=======
+    "children": [
+      "vtex.menu@2.x:menu#footer-mobile"
+    ]
+  },
+  "flex-layout.row#3-footer-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-mobile2"
+    ]
+  },
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "children": [
+      "menu-item#moda-feminina-camisetas",
+      "menu-item#moda-feminina-calcas",
+      "menu-item#moda-feminina-vestidos",
+      "menu-item#moda-feminina-sapatos"
+    ]
+  },
+  "vtex.menu@2.x:menu#footer-mobile2": {
+    "children": [
+      "menu-item#moda-feminina-esportivos",
+      "menu-item#moda-feminina-saias",
+      "menu-item#moda-feminina-acessorios",
+      "menu-item#moda-feminina-underwear"
+    ]
+>>>>>>> 063fa78 (Finalização Header e footer)
   },
   "rich-text#footer-mobile": {
     "props": {
@@ -113,4 +233,8 @@
       "blockClass": "footer"
     }
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 063fa78 (Finalização Header e footer)

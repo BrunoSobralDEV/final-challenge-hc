@@ -8,12 +8,24 @@
       "newsletter"
     ]
   },
+<<<<<<< HEAD
 
+=======
+  "newsletter": {
+    "props": {
+      "blockClass": "news"
+    }
+  },
+>>>>>>> 063fa78 (Finalização Header e footer)
   "rich-text#shelf-tendencies": {
     "props": {
       "text": "## Tendências da temporada",
       "blockClass": "shelfTitle"
     }
   }
+<<<<<<< HEAD
 
 }
+=======
+}
+>>>>>>> 063fa78 (Finalização Header e footer)

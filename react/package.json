@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "@iconify/react": "^3.2.2",
+>>>>>>> 063fa78 (Finalização Header e footer)
     "@vtex/css-handles": "^1.0.0",
     "@vtex/order-items": "^0.6.6",
     "react": "^16.12.0"

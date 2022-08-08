@@ -8,7 +8,11 @@
   font-weight: 800;
   font-weight: bold;
   color: #282828;
+<<<<<<< HEAD
    justify-content: left;
+=======
+  justify-content: left;
+>>>>>>> 063fa78 (Finalização Header e footer)
   text-align: center;
 }
 
@@ -68,12 +72,20 @@
 }
 
 
+<<<<<<< HEAD
 .listItem{
+=======
+.listItem {
+>>>>>>> 063fa78 (Finalização Header e footer)
   list-style-type: none;
 }
 
 
+<<<<<<< HEAD
 .link{
+=======
+.link {
+>>>>>>> 063fa78 (Finalização Header e footer)
   color: black;
   text-decoration: none;
 }
@@ -116,4 +128,23 @@
     justify-content: center;
     text-align: center;
   }
+<<<<<<< HEAD
+=======
+}
+
+/* ________________________________________________
+A edição começa aqui */
+
+.container--footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b0b0b;
+  color: #fff;
+}
+
+.wrapper,
+.wrapper--footer {
+  text-align: center;
+>>>>>>> 063fa78 (Finalização Header e footer)
 }

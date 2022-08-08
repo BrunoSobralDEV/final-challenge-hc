@@ -1,0 +1,37 @@
+.menuItem,
+.menuItem--isOpen,
+.styledLinkContent,
+.styledLinkContainer {
+  color: black;
+  text-align: center;
+}
+
+.styledLinkContent:nth-child(0n+2) {
+  color: white;
+}
+
+.menuItem--main,
+.menuItem--main--isOpen,
+.styledLinkContainer--main,
+.styledLinkContent--main {
+  font-weight: 600;
+  color: #FFF;
+  font-size: 30px;
+}
+
+.styledLinkContent {
+  color: #FFF;
+}
+
+@media screen and (max-width: 485px) {
+  .styledLinkContainer {
+    margin: 0;
+  }
+
+  .menuItem,
+  .menuItem--isClosed {
+    font-size: 15px;
+    width: 50%;
+  }
+
+}

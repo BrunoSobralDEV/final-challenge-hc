@@ -18,8 +18,11 @@
     background-size: contain;
 }
 
+<<<<<<< HEAD
 @media (max-width: 420px) {
     .buttonText {
         font-size: 12px;
     }
 }
+=======
+>>>>>>> 063fa78 (Finalização Header e footer)

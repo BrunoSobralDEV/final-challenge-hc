@@ -1,5 +1,6 @@
 {
   "header": {
+<<<<<<< HEAD
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header.full": {
@@ -23,15 +24,42 @@
   "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "menu-link",
+=======
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      // "flex-layout.row#1-desktop",
+      "sticky-layout#4-desktop",
+      "flex-layout.row#3-desktop"
+    ]
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "sub-menu-link",
+>>>>>>> 063fa78 (Finalização Header e footer)
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
     "children": [
+<<<<<<< HEAD
       "vtex.menu@2.x:menu#websites",
       "flex-layout.col#spacer",
       "vtex.menu@2.x:menu#institutional"
+=======
+      "vtex.menu@2.x:menu#subcategory"
+>>>>>>> 063fa78 (Finalização Header e footer)
     ]
   },
   "flex-layout.col#spacer": {
@@ -43,7 +71,21 @@
     "props": {
       "blockClass": "sticky-header"
     },
+<<<<<<< HEAD
     "children": ["flex-layout.row#4-desktop"]
+=======
+    "children": [
+      "flex-layout.row#4-desktop"
+    ]
+  },
+  "icon-cart#minicart-icon": {
+    "props": {
+      "blockClass": "minicartIconSize",
+      "size": 40,
+      "width": 50,
+      "height": 50
+    }
+>>>>>>> 063fa78 (Finalização Header e footer)
   },
   "flex-layout.row#4-desktop": {
     "props": {
@@ -56,10 +98,15 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
+<<<<<<< HEAD
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
       "search-bar",
       "locale-switcher",
+=======
+      "search-bar",
+      "services",
+>>>>>>> 063fa78 (Finalização Header e footer)
       "login",
       "minicart.v2"
     ]
@@ -68,12 +115,19 @@
     "props": {
       "verticalAlign": "middle"
     },
+<<<<<<< HEAD
     "children": ["logo#desktop"]
+=======
+    "children": [
+      "vtex.store-components:logo#desktop"
+    ]
+>>>>>>> 063fa78 (Finalização Header e footer)
   },
   "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "middle"
     },
+<<<<<<< HEAD
     "children": ["vtex.menu@2.x:menu#category-menu"]
   },
   "logo#desktop": {
@@ -90,11 +144,54 @@
   },
   "sticky-layout#1-mobile": {
     "children": ["flex-layout.row#1-mobile"]
+=======
+    "children": [
+      "vtex.menu@2.x:menu#subcategory"
+    ]
+  },
+  "vtex.store-components:logo#desktop": {
+    "props": {
+      "title": "Logo Desktop",
+      "href": "/",
+      // "url": "https://atmosphere.vteximg.com.br/arquivos/logo-atmosphere.png",
+      "url": "https://i.imgur.com/Jgi1l3k.png",
+      "width": "180",
+      "height": "25"
+    }
+  },
+  "login": {
+    "props": {
+      "optionsTitle": "Cadastre-se ou faça login para aproveitar",
+      "emailAndPasswordTitle": "Acessar com e-mail e senha",
+      "accessCodeTitle": "Receba um código de acesso via e-mail",
+      "emailPlaceholder": "Digite seu e-mail",
+      "passwordPlaceholder": "Digite sua senha",
+      "acessCodePlaceholder": "Código enviado para o seu e-mail",
+      "showPasswordVerificationIntoTooltip": false,
+      "iconLabel": "login",
+      "accountOptionsButtonBehavior": "link",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+  "header-layout.mobile": {
+    "children": [
+      "sticky-layout#1-mobile"
+    ]
+  },
+  "sticky-layout#1-mobile": {
+    "children": [
+      "flex-layout.row#1-mobile"
+    ]
+>>>>>>> 063fa78 (Finalização Header e footer)
   },
   "flex-layout.row#1-mobile": {
     "children": [
       "drawer",
+<<<<<<< HEAD
       "logo#mobile",
+=======
+      "vtex.store-components:logo#mobile",
+>>>>>>> 063fa78 (Finalização Header e footer)
       "flex-layout.col#spacer",
       "login",
       "minicart.v2"
@@ -107,11 +204,45 @@
     }
   },
   "drawer": {
+<<<<<<< HEAD
     "children": ["menu#drawer"]
   },
 
   "menu#drawer": {
     "children": [
+=======
+    "children": [
+      "menu#drawer"
+    ]
+  },
+  "menu#drawer": {
+    "children": [
+      "flex-layout.col#drawer",
+      "flex-layout.col#drawer2"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "flex-layout.col#drawer": {
+    "props": {
+      "blockClass": "drawer-header-mobile"
+    },
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#drawer2": {
+    "props": {
+      "blockClass": "categories-drawer"
+    },
+    "children": [
+>>>>>>> 063fa78 (Finalização Header e footer)
       "menu-item#moda-feminina-camisetas",
       "menu-item#moda-feminina-calcas",
       "menu-item#moda-feminina-vestidos",
@@ -123,6 +254,7 @@
       "menu-item#moda-feminina-todos-produtos"
     ],
     "props": {
+<<<<<<< HEAD
       "orientation": "vertical"
     }
   },
@@ -130,10 +262,26 @@
   "logo#mobile": {
     "props": {
       "title": "Logo",
+=======
+      "blockClass": "mobile-drawer-col",
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  "vtex.store-components:logo#mobile": {
+    "props": {
+      "title": "Logo Mobile",
+>>>>>>> 063fa78 (Finalização Header e footer)
       "href": "/",
       "url": "https://atmosphere.vteximg.com.br/arquivos/logo-atmosphere.png",
       "width": "130",
       "height": "28"
     }
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 063fa78 (Finalização Header e footer)

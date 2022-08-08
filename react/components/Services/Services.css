@@ -1,0 +1,42 @@
+.services {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  color: #FFF;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin: auto 10px;
+  border: none;
+  padding: 0 10px;
+  background-color: #0b0b0b !important;
+  border-radius: 8px;
+}
+
+.faq {
+  text-decoration: none;
+}
+
+.superIcons {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.servicesLabel {
+  font-size: 16px;
+}
+
+.subServicesLabel {
+  margin: 0;
+  font-weight: 600;
+  font-size: 17px;
+}

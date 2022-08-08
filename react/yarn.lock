@@ -2,19 +2,38 @@
 # yarn lockfile v1
 
 
+<<<<<<< HEAD
 "@types/uuid@^8.3.0":
   version "8.3.4"
   resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.4.tgz#bd86a43617df0594787d38b735f55c805becf1bc"
+=======
+"@iconify/react@^3.2.2":
+  version "3.2.2"
+  resolved "https://registry.npmjs.org/@iconify/react/-/react-3.2.2.tgz"
+  integrity sha512-z3+Jno3VcJzgNHsN5mEvYMsgCkOZkydqdIwOxjXh45+i2Vs9RGH68Y52vt39izwFSfuYUXhaW+1u7m7+IhCn/g==
+
+"@types/uuid@^8.3.0":
+  version "8.3.4"
+  resolved "https://registry.npmjs.org/@types/uuid/-/uuid-8.3.4.tgz"
+>>>>>>> 063fa78 (Finalização Header e footer)
   integrity sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==
 
 "@vtex/css-handles@^1.0.0":
   version "1.1.3"
+<<<<<<< HEAD
   resolved "https://registry.yarnpkg.com/@vtex/css-handles/-/css-handles-1.1.3.tgz#30bd1010f2907443188738f74dd11d3b6b4ac624"
+=======
+  resolved "https://registry.npmjs.org/@vtex/css-handles/-/css-handles-1.1.3.tgz"
+>>>>>>> 063fa78 (Finalização Header e footer)
   integrity sha512-DkqnzMf5jW6lQ1L8wYb9fnXyh0FqZym8qEokGYjeLUqBLBAiVK8XbI4U0ezFswWTOJ3iHZUkUjqPt5WodxR29w==
 
 "@vtex/order-items@^0.6.6":
   version "0.6.6"
+<<<<<<< HEAD
   resolved "https://registry.yarnpkg.com/@vtex/order-items/-/order-items-0.6.6.tgz#b9003d1d6778e931064eeb9b6185a6da839c4461"
+=======
+  resolved "https://registry.npmjs.org/@vtex/order-items/-/order-items-0.6.6.tgz"
+>>>>>>> 063fa78 (Finalização Header e footer)
   integrity sha512-lE5DS/z+EkXo58lxLoPa+AIxTg5Hm+mlE++3WqLOSHoNzpvN3DCl4Av1BND2TouQpJIFAa0r2xplh3iNLLIAuA==
   dependencies:
     "@types/uuid" "^8.3.0"
@@ -24,31 +43,51 @@
 
 "@vtex/order-manager@^0.5.0":
   version "0.5.2"
+<<<<<<< HEAD
   resolved "https://registry.yarnpkg.com/@vtex/order-manager/-/order-manager-0.5.2.tgz#3fcc20ab67671dfe77d278270b22993dd143ba40"
+=======
+  resolved "https://registry.npmjs.org/@vtex/order-manager/-/order-manager-0.5.2.tgz"
+>>>>>>> 063fa78 (Finalização Header e footer)
   integrity sha512-pHGe1V7OOqW6gg2Kmjay8tTGRNICQhd6qSjaP69hSgYUxO/eWXVeeofidij65arJk8o41B6CdpS14ZItsBp4Yw==
   dependencies:
     react "17.0.1"
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
+<<<<<<< HEAD
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+=======
+  resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
+>>>>>>> 063fa78 (Finalização Header e footer)
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
 loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
+<<<<<<< HEAD
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+=======
+  resolved "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz"
+>>>>>>> 063fa78 (Finalização Header e footer)
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
 object-assign@^4.1.1:
   version "4.1.1"
+<<<<<<< HEAD
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
+=======
+  resolved "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz"
+>>>>>>> 063fa78 (Finalização Header e footer)
   integrity sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==
 
 prop-types@^15.6.2:
   version "15.8.1"
+<<<<<<< HEAD
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
+=======
+  resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
+>>>>>>> 063fa78 (Finalização Header e footer)
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
   dependencies:
     loose-envify "^1.4.0"
@@ -57,7 +96,11 @@ prop-types@^15.6.2:
 
 react-is@^16.13.1:
   version "16.13.1"
+<<<<<<< HEAD
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
+=======
+  resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
+>>>>>>> 063fa78 (Finalização Header e footer)
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
 react@17.0.1:
@@ -70,7 +113,11 @@ react@17.0.1:
 
 react@^16.12.0:
   version "16.14.0"
+<<<<<<< HEAD
   resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
+=======
+  resolved "https://registry.npmjs.org/react/-/react-16.14.0.tgz"
+>>>>>>> 063fa78 (Finalização Header e footer)
   integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
   dependencies:
     loose-envify "^1.1.0"
@@ -79,11 +126,16 @@ react@^16.12.0:
 
 uuid@^8.3.2:
   version "8.3.2"
+<<<<<<< HEAD
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+=======
+  resolved "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
+>>>>>>> 063fa78 (Finalização Header e footer)
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 "vtex.css-handles@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles":
   version "1.0.0"
+<<<<<<< HEAD
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles#336b23ef3a9bcb2b809529ba736783acd405d081"
 
 "vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context":
@@ -93,3 +145,17 @@ uuid@^8.3.2:
 "vtex.slider-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.2/public/@types/vtex.slider-layout":
   version "0.22.2"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.2/public/@types/vtex.slider-layout#0367df6d1205fad5e414684732cc5e13b60533c7"
+=======
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles"
+  integrity sha512-zJL6hjlnmY5IxLFO+cjjTYVIS4flXwMtYnQSen93psIXHEXwDp93P/67GKHTj6B7KHZylmzkxWR6aj9EnoktMA==
+
+"vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context":
+  version "0.10.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context"
+  integrity sha512-wib/8sXnd5mYRaYxL0NlCTAbyhq02VQLzhHPjW3ixA5uJn8+7TGTloBMpW2g0Pz3Avj/Y1Z98NDFSWz+nUKM6w==
+
+"vtex.slider-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.2/public/@types/vtex.slider-layout":
+  version "0.22.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.2/public/@types/vtex.slider-layout"
+  integrity sha512-31xgy7mWhkLUKogDxJ+hdgjZACEUd1kA2aG2fTH/l0ZpUQbANIdFZB3B5HiqirJmzG3ZoZGN19gKvJWxz/x0gw==
+>>>>>>> 063fa78 (Finalização Header e footer)

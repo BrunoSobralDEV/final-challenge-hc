@@ -1,6 +1,12 @@
 {
   "store.search": {
+<<<<<<< HEAD
     "blocks": ["search-result-layout"],
+=======
+    "blocks": [
+      "search-result-layout"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -9,9 +15,16 @@
       }
     }
   },
+<<<<<<< HEAD
 
   "store.search#brand": {
     "blocks": ["search-result-layout"],
+=======
+  "store.search#brand": {
+    "blocks": [
+      "search-result-layout"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
@@ -22,9 +35,16 @@
       }
     }
   },
+<<<<<<< HEAD
 
   "store.search#department": {
     "blocks": ["search-result-layout"],
+=======
+  "store.search#department": {
+    "blocks": [
+      "search-result-layout"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -33,9 +53,16 @@
       }
     }
   },
+<<<<<<< HEAD
 
   "store.search#category": {
     "blocks": ["search-result-layout"],
+=======
+  "store.search#category": {
+    "blocks": [
+      "search-result-layout"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -44,9 +71,16 @@
       }
     }
   },
+<<<<<<< HEAD
 
   "store.search#subcategory": {
     "blocks": ["search-result-layout"],
+=======
+  "store.search#subcategory": {
+    "blocks": [
+      "search-result-layout"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -55,7 +89,10 @@
       }
     }
   },
+<<<<<<< HEAD
 
+=======
+>>>>>>> 063fa78 (Finalização Header e footer)
   "search-result-layout": {
     "blocks": [
       "search-result-layout.desktop",
@@ -63,7 +100,10 @@
       "search-not-found-layout"
     ]
   },
+<<<<<<< HEAD
 
+=======
+>>>>>>> 063fa78 (Finalização Header e footer)
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#searchbread",
@@ -77,24 +117,50 @@
     }
   },
   "flex-layout.row#searchbread": {
+<<<<<<< HEAD
     "children": ["breadcrumb.search"],
     "props": {
+=======
+    "children": [
+      "breadcrumb.search"
+    ],
+    "props": {
+      "blockClass": "minimap",
+>>>>>>> 063fa78 (Finalização Header e footer)
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
   },
   "flex-layout.row#searchtitle": {
+<<<<<<< HEAD
     "children": ["search-title.v2"]
   },
   "flex-layout.row#result": {
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
+=======
+    "children": [
+      "search-title.v2"
+    ]
+  },
+  "flex-layout.row#result": {
+    "children": [
+      "flex-layout.col#filter",
+      "flex-layout.col#content"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "preventHorizontalStretch": true,
       "fullWidth": true
     }
   },
   "flex-layout.col#filter": {
+<<<<<<< HEAD
     "children": ["filter-navigator.v3"],
+=======
+    "children": [
+      "filter-navigator.v3"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "blockClass": "filterCol"
     }
@@ -118,7 +184,13 @@
     ]
   },
   "flex-layout.row#orderByAndSwitcher": {
+<<<<<<< HEAD
     "children": ["order-by.v2"],
+=======
+    "children": [
+      "order-by.v2"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "horizontalAlign": "right",
       "preventHorizontalStretch": true,
@@ -127,7 +199,13 @@
     }
   },
   "flex-layout.col#productCount": {
+<<<<<<< HEAD
     "children": ["total-products.v2"],
+=======
+    "children": [
+      "total-products.v2"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "blockClass": "productCountCol"
     }
@@ -136,13 +214,25 @@
     "props": {
       "marginBottom": 3
     },
+<<<<<<< HEAD
     "children": ["search-fetch-previous"]
+=======
+    "children": [
+      "search-fetch-previous"
+    ]
+>>>>>>> 063fa78 (Finalização Header e footer)
   },
   "flex-layout.row#fetchmore": {
     "props": {
       "marginTop": 3
     },
+<<<<<<< HEAD
     "children": ["search-fetch-more"]
+=======
+    "children": [
+      "search-fetch-more"
+    ]
+>>>>>>> 063fa78 (Finalização Header e footer)
   },
   "search-fetch-previous": {
     "props": {
@@ -155,12 +245,25 @@
     }
   },
   "flex-layout.row#products": {
+<<<<<<< HEAD
     "children": ["search-content"]
   },
   "search-content": {
     "blocks": ["gallery", "not-found"]
   },
 
+=======
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-content": {
+    "blocks": [
+      "gallery",
+      "not-found"
+    ]
+  },
+>>>>>>> 063fa78 (Finalização Header e footer)
   "search-result-layout.mobile": {
     "children": [
       "flex-layout.row#searchinfomobile",
@@ -180,12 +283,21 @@
     }
   },
   "flex-layout.row#contentmobile": {
+<<<<<<< HEAD
     "children": ["search-content"],
+=======
+    "children": [
+      "search-content"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "preserveLayoutOnMobile": true
     }
   },
+<<<<<<< HEAD
 
+=======
+>>>>>>> 063fa78 (Finalização Header e footer)
   "flex-layout.row#searchinfomobile": {
     "children": [
       "flex-layout.col#orderByMobile",
@@ -198,23 +310,44 @@
       "colJustify": "around"
     }
   },
+<<<<<<< HEAD
 
   "flex-layout.col#orderByMobile": {
     "children": ["order-by.v2"],
+=======
+  "flex-layout.col#orderByMobile": {
+    "children": [
+      "order-by.v2"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "blockClass": "orderByMobileCol"
     }
   },
+<<<<<<< HEAD
 
   "flex-layout.row#productCountMobile": {
     "children": ["total-products.v2"],
+=======
+  "flex-layout.row#productCountMobile": {
+    "children": [
+      "total-products.v2"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "blockClass": "productCountMobileRow"
     }
   },
+<<<<<<< HEAD
 
   "flex-layout.col#filterMobile": {
     "children": ["filter-navigator.v3"],
+=======
+  "flex-layout.col#filterMobile": {
+    "children": [
+      "filter-navigator.v3"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "blockClass": "filterMobileCol"
     }
@@ -226,22 +359,40 @@
     }
   },
   "search-not-found-layout": {
+<<<<<<< HEAD
     "children": ["flex-layout.row#searchbread", "flex-layout.row#notfound"]
   },
 
   "flex-layout.row#notfound": {
     "children": ["not-found"],
+=======
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#notfound"
+    ]
+  },
+  "flex-layout.row#notfound": {
+    "children": [
+      "not-found"
+    ],
+>>>>>>> 063fa78 (Finalização Header e footer)
     "props": {
       "fullWidth": true
     }
   },
+<<<<<<< HEAD
 
+=======
+>>>>>>> 063fa78 (Finalização Header e footer)
   "breadcrumb": {
     "props": {
       "showOnMobile": true
     }
   },
+<<<<<<< HEAD
 
+=======
+>>>>>>> 063fa78 (Finalização Header e footer)
   "gallery": {
     "props": {
       "layouts": [
@@ -279,12 +430,20 @@
     "props": {
       "name": "grid"
     },
+<<<<<<< HEAD
     "children": ["icon-grid", "responsive-layout.desktop#textOptionGrid"]
+=======
+    "children": [
+      "icon-grid",
+      "responsive-layout.desktop#textOptionGrid"
+    ]
+>>>>>>> 063fa78 (Finalização Header e footer)
   },
   "gallery-layout-option#list": {
     "props": {
       "name": "list"
     },
+<<<<<<< HEAD
     "children": ["icon-inline-grid", "responsive-layout.desktop#textOptionList"]
   },
   "responsive-layout.desktop#textOptionGrid": {
@@ -292,6 +451,22 @@
   },
   "responsive-layout.desktop#textOptionList": {
     "children": ["rich-text#option-list"]
+=======
+    "children": [
+      "icon-inline-grid",
+      "responsive-layout.desktop#textOptionList"
+    ]
+  },
+  "responsive-layout.desktop#textOptionGrid": {
+    "children": [
+      "rich-text#option-grid"
+    ]
+  },
+  "responsive-layout.desktop#textOptionList": {
+    "children": [
+      "rich-text#option-list"
+    ]
+>>>>>>> 063fa78 (Finalização Header e footer)
   },
   "rich-text#option-grid": {
     "props": {
@@ -307,4 +482,8 @@
       "blockClass": "layout-option"
     }
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 063fa78 (Finalização Header e footer)

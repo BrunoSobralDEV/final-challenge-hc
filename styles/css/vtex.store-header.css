@@ -1,10 +1,16 @@
 /* add transitions */
+<<<<<<< HEAD
 :global(.vtex-sticky-layout-0-x-container)
   :global(.vtex-store-components-3-x-logoLink),
 :global(.vtex-sticky-layout-0-x-container)
   :global(.vtex-minicart-2-x-openIconContainer),
 :global(.vtex-sticky-layout-0-x-container)
   :global(.vtex-store-components-3-x-searchBarContainer) {
+=======
+:global(.vtex-sticky-layout-0-x-container) :global(.vtex-store-components-3-x-logoLink),
+:global(.vtex-sticky-layout-0-x-container) :global(.vtex-minicart-2-x-openIconContainer),
+:global(.vtex-sticky-layout-0-x-container) :global(.vtex-store-components-3-x-searchBarContainer) {
+>>>>>>> 063fa78 (Finalização Header e footer)
   transition: all 0.3s ease;
   display: block;
 }
@@ -23,10 +29,15 @@
 }
 
 /* add a box-shadow to desktop/mobile header when stuck */
+<<<<<<< HEAD
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+=======
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+>>>>>>> 063fa78 (Finalização Header e footer)
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -34,8 +45,12 @@
  * remove the extra padding when stuck from the desktop header
  * we add a transition only when "stuck" for the "unstick" step seem faster
  */
+<<<<<<< HEAD
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+=======
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+>>>>>>> 063fa78 (Finalização Header e footer)
   transition: padding 0.3s ease, background 0.3s ease;
   padding-top: 0;
   padding-bottom: 0;
@@ -43,19 +58,31 @@
 
 /* if supported add some translucency to the desktop/mobile header background */
 @supports (backdrop-filter: blur(5px)) {
+<<<<<<< HEAD
   :global(.vtex-sticky-layout-0-x-wrapper--stuck)
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
   :global(.vtex-sticky-layout-0-x-wrapper--stuck)
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+=======
+
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+>>>>>>> 063fa78 (Finalização Header e footer)
     backdrop-filter: blur(8px);
   }
 
   /* header background when stuck and not hovered */
+<<<<<<< HEAD
   :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
   :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
     background: rgba(240, 240, 240, 0.8);
+=======
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover) :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover) :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+    background: #0b0b0b;
+>>>>>>> 063fa78 (Finalização Header e footer)
   }
 }
 
@@ -65,12 +92,17 @@
 }
 
 /* resize the logo for neat effect */
+<<<<<<< HEAD
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-store-components-3-x-logoLink) {
+=======
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-store-components-3-x-logoLink) {
+>>>>>>> 063fa78 (Finalização Header e footer)
   transform: scale(0.85);
 }
 
 @media (prefers-reduced-motion: reduce) {
+<<<<<<< HEAD
   :global(.vtex-sticky-layout-0-x-container)
     :global(.vtex-store-components-3-x-logoLink),
   :global(.vtex-sticky-layout-0-x-container)
@@ -82,3 +114,13 @@
     transition: none;
   }
 }
+=======
+
+  :global(.vtex-sticky-layout-0-x-container) :global(.vtex-store-components-3-x-logoLink),
+  :global(.vtex-sticky-layout-0-x-container) :global(.vtex-minicart-2-x-openIconContainer),
+  :global(.vtex-sticky-layout-0-x-container) :global(.vtex-store-components-3-x-searchBarContainer),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+    transition: none;
+  }
+}
+>>>>>>> 063fa78 (Finalização Header e footer)

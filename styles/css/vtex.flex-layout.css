@@ -2,16 +2,18 @@
 .flexRowContent--main-header {
   padding: 0 0.5rem;
 }
- .flexRowContent {
+
+.flexRowContent {
   text-align: left;
 
- }
+}
 
- .flexRowContent--productImages {
+.flexRowContent--productImages {
   margin-left: 40px;
- }
+}
 
 @media screen and (min-width: 40em) {
+
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 1rem;
@@ -20,6 +22,7 @@
 
 
 @media screen and (min-width: 80rem) {
+
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 0.25rem;
@@ -27,9 +30,9 @@
 }
 
 .flexRowContent--menu-link {
-  background-color: #000000;
+  background-color: #0b0b0b;
+  border-top: 1px solid #0F3E99;
   color: #fff;
-  margin-left: 0px !important;
 }
 
 .flexRowContent--main-header {
@@ -116,16 +119,94 @@
   display: none;
 }
 
-/* .productImageTag {
-  margin-left: 40px;
-} */
+.flexRowContent--main-header {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+
+.flexRowContent,
+.flexRowContent--menu-row:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* background-color: #dfdfdf; */
+  color: #FFF;
+}
 
 @media screen and (max-width: 500cm) {
   .stretchChildrenWidth {
     margin-left: 0px;
   }
+
   .flexRowContent {
     max-width: 640cm;
   }
 }
 
+/* ________________________________________________
+Mudanças a partir daqui */
+
+
+.flexRowContent,
+.flexRowContent--main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 100vw;
+}
+
+@media screen and (max-width:1025px) {
+
+  .flexRowContent--main-header,
+  .flexRowContent--main-header-mobile {
+    width: 99, 9%;
+    background-color: #0b0b0b;
+  }
+}
+
+.flexRowContent--main-header {
+  color: #fff;
+  background-color: #0b0b0b;
+}
+
+.menuItem,
+.menuItem--isOpen {
+  background-color: #0b0b0b;
+}
+
+.flexRowContent--sub-menu-color,
+.flexRowContent--sub-menu-link,
+.flexRowContent--menu-link {
+  width: 100%;
+  color: #FFF;
+  background-color: #0b0b0b;
+}
+
+.flexRow,
+.flexRow--menu-row--footer-main {
+  width: 100%;
+}
+
+.flexRowContent--menu-row--bg {
+  border-bottom: 1px solid #03c998;
+  background-color: #0b0b0b;
+  font-size: 20px;
+}
+
+.flexColChild--mobile-drawer-col {
+  padding: 15px 0;
+  font-size: 20px;
+}
+
+.flexCol--mobile-drawer-col {
+  width: 450px;
+  background-color: #0b0b0b;
+  padding: 5px;
+}
+
+.flexColChild--filterCol {
+  padding-left: 15px;
+  color: #0b0b0b;
+}

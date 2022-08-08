@@ -9,3 +9,32 @@
 .row--payment-methods {
   padding-top: 16px;
 }
+<<<<<<< HEAD
+=======
+
+
+
+/* ________________________________________________
+Adição começa aqui */
+
+.acceptedPaymentMethodContainer {
+  border-bottom: 1px solid #03c998;
+  background-color: #0b0b0b;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+}
+
+.socialNetworkWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1px solid #03c998;
+}
+
+.footerLayout {
+  background-color: #0b0b0b;
+  color: #fff;
+}
+>>>>>>> 063fa78 (Finalização Header e footer)
