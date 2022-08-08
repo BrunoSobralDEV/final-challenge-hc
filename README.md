@@ -6,7 +6,7 @@
 
 # :pushpin: Table of Contents
 
-- :house: [About](#about)
+- :house: [About](#house-about)
 - :dart: [Installation](#Installation)
   - :gear: [Install dependencies](##Install_dependencies)
   - :rocket: [Getting Started](##Getting_Started)
