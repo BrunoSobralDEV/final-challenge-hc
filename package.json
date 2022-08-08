@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@types/node": "^18.6.4",
+    "@vtex/clients": "^2.19.5"
+  },
+  "devDependencies": {
+    "@vtex/tsconfig": "^0.6.0"
+  }
+}
