@@ -9,7 +9,9 @@
     "docs": "0.x",
     "node": "6.x",
     "assets": "0.x",
-    "react": "3.x"
+    "react": "3.x",
+    "admin": "0.x",
+    "messages": "1.x"
   },
   "mustUpdateAt": "2018-09-05",
   "scripts": {
@@ -68,7 +70,8 @@
     "vtex.css-handles": "1.x",
     "atmosphere.tendencies": "0.x",
     "vtex.product-context": "0.x",
-    "vtex.order-items": "0.x"
+    "vtex.order-items": "0.x",
+    "vtex.paginated-table": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"

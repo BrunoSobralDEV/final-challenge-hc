@@ -1,0 +1,11 @@
+{
+  "section": "orders",
+  "titleId": "admin-combination.navigation.label",
+  "searchKeyWordsHelpers": "admin-example.navigation.search.kws",
+  "subSectionItems": [
+    {
+      "labelId": "admin-combination.navigation.list",
+      "path": "/admin/list-of-combination"
+    }
+  ]
+}
