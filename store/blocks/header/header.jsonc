@@ -1,37 +1,33 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#1-desktop",
-      "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+      // "flex-layout.row#1-desktop",
+      "sticky-layout#4-desktop",
+      "flex-layout.row#3-desktop"
     ]
   },
-
-  "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
-    "props": {
-      "fullWidth": true
-    }
-  },
-
   "flex-layout.row#3-desktop": {
     "props": {
-      "blockClass": "menu-link",
+      "blockClass": "sub-menu-link",
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "vtex.menu@2.x:menu#subcategory"
     ]
   },
   "flex-layout.col#spacer": {
@@ -43,7 +39,17 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#4-desktop"]
+    "children": [
+      "flex-layout.row#4-desktop"
+    ]
+  },
+  "icon-cart#minicart-icon": {
+    "props": {
+      "blockClass": "minicartIconSize",
+      "size": 40,
+      "width": 50,
+      "height": 50
+    }
   },
   "flex-layout.row#4-desktop": {
     "props": {
@@ -56,10 +62,8 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
+      "services",
       "login",
       "minicart.v2"
     ]
@@ -68,33 +72,55 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo#desktop"]
+    "children": [
+      "vtex.store-components:logo#desktop"
+    ]
   },
   "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
+    "children": [
+      "vtex.menu@2.x:menu#subcategory"
+    ]
   },
-  "logo#desktop": {
+  "vtex.store-components:logo#desktop": {
     "props": {
-      "title": "Logo",
+      "title": "Logo Desktop",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      // "url": "https://atmosphere.vteximg.com.br/arquivos/logo-atmosphere.png",
+      "url": "https://i.imgur.com/Jgi1l3k.png",
       "width": "180",
-      "height": "12"
+      "height": "25"
+    }
+  },
+  "login": {
+    "props": {
+      "optionsTitle": "Cadastre-se ou faça login para aproveitar",
+      "emailAndPasswordTitle": "Acessar com e-mail e senha",
+      "accessCodeTitle": "Receba um código de acesso via e-mail",
+      "emailPlaceholder": "Digite seu e-mail",
+      "passwordPlaceholder": "Digite sua senha",
+      "acessCodePlaceholder": "Código enviado para o seu e-mail",     
+      "iconLabel": "login",
+      "accountOptionsButtonBehavior": "link",
+      "showPasswordVerificationIntoTooltip": true
     }
   },
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": [
+      "sticky-layout#1-mobile"
+    ]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
+    "children": [
+      "flex-layout.row#1-mobile"
+    ]
   },
   "flex-layout.row#1-mobile": {
     "children": [
       "drawer",
-      "logo#mobile",
+      "vtex.store-components:logo#mobile",
       "flex-layout.col#spacer",
       "login",
       "minicart.v2"
@@ -107,10 +133,36 @@
     }
   },
   "drawer": {
-    "children": ["menu#drawer"]
+    "children": [
+      "menu#drawer"
+    ]
   },
-
   "menu#drawer": {
+    "children": [
+      "flex-layout.col#drawer",
+      "flex-layout.col#drawer2"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "flex-layout.col#drawer": {
+    "props": {
+      "blockClass": "drawer-header-mobile"
+    },
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#drawer2": {
+    "props": {
+      "blockClass": "categories-drawer"
+    },
     "children": [
       "menu-item#moda-feminina-camisetas",
       "menu-item#moda-feminina-calcas",
@@ -123,17 +175,20 @@
       "menu-item#moda-feminina-todos-produtos"
     ],
     "props": {
-      "orientation": "vertical"
+      "blockClass": "mobile-drawer-col",
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "width": "100%",
+      "height": "100%"
     }
   },
-
-  "logo#mobile": {
+  "vtex.store-components:logo#mobile": {
     "props": {
-      "title": "Logo",
+      "title": "Logo Mobile",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "77.5",
-      "height": "27.5"
+      "url": "https://atmosphere.vteximg.com.br/arquivos/logo-atmosphere.png",
+      "width": "130",
+      "height": "28"
     }
   }
 }

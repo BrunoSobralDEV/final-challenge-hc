@@ -5,7 +5,7 @@ import style from "./styles.css";
 
 
 
-const ShelfItem = ({ id, linkURL, imageURL, name, price, sellingPrice, addToCard}) => {
+const ShelfItem = ({ id, linkURL, imageURL, name, price, addToCard}) => {
 
     const handles = style
 
@@ -23,9 +23,6 @@ const ShelfItem = ({ id, linkURL, imageURL, name, price, sellingPrice, addToCard
                     </a>
                     <h2 className={`${handles.shelfProductName}`}>{`${name}`}</h2>
                     <div className={`${handles.shelfPrice}`}>
-                        <p className={`${handles.shelfSellingPrice}`}>
-                            {formatPrice(sellingPrice)}
-                        </p>
                         <p className={`${handles.shelfBestPrice}`}>
                             {formatPrice(price)}
                         </p>

@@ -14,14 +14,22 @@
 }
 
 .newsletter {
-  background-color: #03054e;
-  max-width: 1528px;
+  background-color: #282828;
+  margin-top: 4rem;
   margin: 0 auto;
 }
 
 .newsletter .container {
-  padding: 60px 10px;
+  max-height: 18rem;
 }
+
+.newsletter :global(.vtex-input-prefix__group) {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
 
 .label {
   color: #fff;
@@ -66,18 +74,18 @@
 }
 
 @media only screen and (min-width: 640px) {
-  .newsletter .container {
-    padding: 140px;
-  }
   .label {
-     font-size: 40px;
+    font-size: 40px;
   }
+
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;
   }
+
   .infoCardContainer--info-card-home .infoCardImageContainer {
     width: 70%;
   }
+
   .imageElement--storePrint {
     margin-bottom: 0px;
     max-height: 600px;
@@ -106,7 +114,7 @@
   color: #3f3f40;
   font-weight: bold;
   font-size: 36px;
-  text-transform:capitalize;
+  text-transform: capitalize;
   margin-bottom: none;
 }
 
@@ -115,12 +123,14 @@
 }
 
 .container {
-  max-width: 95%;
+  max-width: 100%;
+  padding: 0;
 }
 
 .productImageTag--main {
   align-items: center;
 }
+
 /* .container--product-images {
   margin-left:50px;
 } */
@@ -131,50 +141,51 @@
 .caretIcon {
   color: #03c998
 }
+
 .swiperBullet {
   color: #03c998;
 }
 
 :global(.vtex-input__label) {
   text-transform: uppercase;
- }
+}
 
- :global(.vtex-button__label) {
+:global(.vtex-button__label) {
   padding: 1px;
   text-align: center;
-  font-weight:bold;
- }
+  font-weight: bold;
+}
 
- :global(.vtex-address-form) {
+:global(.vtex-address-form) {
   text-decoration: none;
   color: #9A6D73;
- }
+}
 
- .shippingContainer :global(.vtex-button) {
+.shippingContainer :global(.vtex-button) {
   background-color: #428cd1;
   color: #ffffff;
   border-color: #428cd1;
   margin-top: -1rem;
- }
+}
 
- .productDescriptionContainer {
-    padding: 0 20px;
- }
+.productDescriptionContainer {
+  padding: 0 20px;
+}
 
- .productDescriptionTitle {
+.productDescriptionTitle {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   color: #161515;
- }
+}
 
- .productDescriptionTitle .content {
+.productDescriptionTitle .content {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 119.19%;
   color: #9C9697;
- }
+}
 
 @media (max-width: 768px) {
   .productNameContainer {
@@ -186,7 +197,40 @@
   margin-top: 5px;
 }
 
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* Edição começa aqui */
+.searchBarContainer {
+  width: 600px;
+}
 
+.logoLink {
+  background-color: #86ead1;
+  margin-right: 10px;
+  border-radius: 12px;
+}
 
+.logoContainer,
+.sizeDesktop {
+  width: 180px;
+  padding: 0;
+}
 
+.container--news {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px
+}
 
+@media screen and (max-width:1030px) {
+  .searchBarContainer {
+    margin: 0 10px;
+    width: 300px;
+  }
+}
+
+.inputGroup,
+.inputGroup--news {
+  display: flex;
+  flex-direction: column;
+}

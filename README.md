@@ -76,7 +76,6 @@ SSH is a secure protocol, but you need to register a key ssh in your github befo
 ```bash /store-scrat
 	vtex link
 ```
-
 ---
 
 # :computer: Techs

@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 15px;
+  border-radius: 8px;
+  height: 50px;
+  width: 100px;
+  color: #FFF;
+}
+
+.buttonLink {
+  color: #FFF;
+}
+
+.profileIcon {
+  color: #fff;
+  font-size: 16px;
+}
+
+.label {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* 
+.buttonLink {
+  background-color: #000;
+  color: aliceblue;
+} */

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useOrderItems } from "vtex.order-items/OrderItems";
 import style from "./styles.css";
+import Notification from "./Notification";
 
 const formatPrice = (value) => {
   return value.toLocaleString("pt-BR", {
@@ -25,6 +26,15 @@ const ShelfItem = ({
   const { addItems } = useOrderItems();
   const [countProd1, setCountProd1] = useState(0);
   const [countProd2, setCountProd2] = useState(0);
+  const [clicked, setClicked] = useState(false);
+
+  const showNotification = () => {
+    if (clicked) setClicked(false);
+    setTimeout(() => {
+      setClicked(false);
+    }, 3000);
+    setClicked(true);
+  };
 
   const addToCart = (skuId, incrementCount, counter) => {
     const item = [
@@ -35,7 +45,10 @@ const ShelfItem = ({
       },
     ];
 
-    addItems(item).then(() => incrementCount(counter + 1));
+    addItems(item).then(() => {
+      incrementCount(counter + 1);
+      showNotification();
+    });
   };
 
   const addToCartCombo = () => {
@@ -56,78 +69,89 @@ const ShelfItem = ({
     addItems(items).then(() => {
       setCountProd1(countProd1 + 1);
       setCountProd2(countProd2 + 1);
+      showNotification();
     });
   };
 
   return (
-    <div className={style.shelfItems}>
-      <div className={style.shelfItem}>
-        <div className="shelfContent">
-          <a href={linkURL} className={style.shelfLink}>
-            <div className={style.shelfImages}>
-              <img src={imageURL} alt={name} className={style.shelfImage} />
+    <div className={style.recItems}>
+      <div className={style.recItem}>
+        <div className={style.recContent}>
+          <a href={linkURL} className={style.recLink}>
+            <div className={style.recImages}>
+              <img src={imageURL} alt={name} className={style.recImage} />
             </div>
           </a>
-          <a href={linkURL} className={style.shelfLink}>
-            <h2 className={style.shelfProductName}>{name}</h2>
-          </a>
-          <div className={style.shelfPrice}>
-            <p className={style.shelfSellingPrice}>{formatPrice(listPrice)}</p>
+          <div className={style.recNamePriceContainer}>
+            <a href={linkURL} className={style.recLink}>
+              <h2 className={style.recProductName}>{name}</h2>
+            </a>
+            <div className={style.recPrice}>
+              <p className={style.recSellingPrice}>{formatPrice(listPrice)}</p>
+            </div>
           </div>
         </div>
         <button
           id={id}
           onClick={() => addToCart(id, setCountProd1, countProd1)}
-          className={style.shlefButtonAddToCard}
+          className={style.recButtonAddToCart}
         >
           ADICIONAR AO CARRINHO
         </button>
       </div>
 
-      <div className={style.shelfMeddle}>
-        <h1 className={style.shelfPlus}>+</h1>
+      <div className={style.recMeddle}>
+        <h1 className={style.recPlus}>+</h1>
       </div>
 
-      <div className={style.shelfItem}>
-        <div className="shelfContent">
-          <a href={linkURL2} className={style.shelfLink}>
-            <div className={style.shelfImages}>
-              <img src={imageURL2} alt={name2} className={style.shelfImage} />
+      <div className={style.recItem}>
+        <div className={style.recContent}>
+          <a href={linkURL2} className={style.recLink}>
+            <div className={style.recImages}>
+              <img src={imageURL2} alt={name2} className={style.recImage} />
             </div>
           </a>
-          <a href={linkURL2} className={style.shelfLink}>
-            <h2 className={style.shelfProductName}>{name2}</h2>
-          </a>
-          <div className={style.shelfPrice}>
-            <p className={style.shelfSellingPrice}>{formatPrice(listPrice2)}</p>
+          <div className={style.recNamePriceContainer}>
+            <a href={linkURL2} className={style.recLink}>
+              <h2 className={style.recProductName}>{name2}</h2>
+            </a>
+            <div className={style.recPrice}>
+              <p className={style.recSellingPrice}>{formatPrice(listPrice2)}</p>
+            </div>
           </div>
         </div>
-        <button
-          id={id2}
-          onClick={() => addToCart(id2, setCountProd2, countProd2)}
-          className={style.shlefButtonAddToCard}
-        >
-          ADICIONAR AO CARRINHO
-        </button>
+        <div className={style.recButtonContainer}>
+          <button
+            id={id2}
+            onClick={() => addToCart(id2, setCountProd2, countProd2)}
+            className={style.recButtonAddToCart}
+          >
+            ADICIONAR AO CARRINHO
+          </button>
+        </div>
       </div>
 
-      <div className={style.shelfMeddle}>
-        <h1 className={style.shelfPlus}>=</h1>
+      <div className={style.recMeddle}>
+        <h1 className={style.recPlus}>=</h1>
       </div>
 
-      <div className={style.shelfCombo}>
-        <p className={style.shelfCTA}>Compre os dois por:</p>
-        <p className={style.shelfBestPriceCombo}>
+      <div className={style.recCombo}>
+        <p className={style.recCTA}>Compre os dois por:</p>
+        <p className={style.recBestPriceCombo}>
           {formatPrice(listPrice + listPrice2)}
         </p>
-        <button
-          id={id}
-          onClick={addToCartCombo}
-          className={style.shlefButtonAddToCard}
-        >
-          Adicionar este <br /> combo ao carrinho
-        </button>
+        <div className={style.recButtonContainer}>
+          <button
+            id={id}
+            onClick={addToCartCombo}
+            className={style.recButtonAddToCart}
+          >
+            Adicionar este <br /> combo ao carrinho
+          </button>
+        </div>
       </div>
+
+      {clicked && <Notification />}
     </div>
   );
 };

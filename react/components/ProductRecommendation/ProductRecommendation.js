@@ -80,8 +80,8 @@ const ProductRecommendation = () => {
 
   if (recommendedProduct) {
     return (
-      <div className={style.slider}>
-        <h1 className={style.shelfTitle}>Quem comprou, comprou também</h1>
+      <div className={style.recSlider}>
+        <h1 className={style.recTitle}>Quem comprou, comprou também</h1>
         <ShelfContainer
           id={product?.selectedItem?.itemId}
           linkURL={`/${product?.product?.linkText}/p?skuId=${productSku}`}

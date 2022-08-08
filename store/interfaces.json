@@ -4,5 +4,8 @@
   },
   "shelf-home": {
     "component": "ShelfHome"
+  },
+  "services": {
+    "component": "Services"
   }
 }
