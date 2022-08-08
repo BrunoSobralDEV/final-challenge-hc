@@ -80,7 +80,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "url": "https://atmosphere.vteximg.com.br/arquivos/logo-atmosphere.png",
       "width": "180",
       "height": "12"
     }
@@ -131,9 +131,9 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "77.5",
-      "height": "27.5"
+      "url": "https://atmosphere.vteximg.com.br/arquivos/logo-atmosphere.png",
+      "width": "130",
+      "height": "28"
     }
   }
 }

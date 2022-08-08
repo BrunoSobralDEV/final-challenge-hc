@@ -13,7 +13,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/about-us",
         "noFollow": false,
         "tagTitle": "Quem Somos",
         "text": "Quem Somos"
@@ -28,7 +28,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/faq",
         "noFollow": false,
         "tagTitle": "Fale Conosco",
         "text": "Fale Conosco"
