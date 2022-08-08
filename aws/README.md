@@ -243,3 +243,8 @@ body:
   "body": "Success in subtracting the canceled items!"
 }
 ```
+<<<<<<< HEAD
+=======
+
+Tabém possuimos a API para fazer a consulta do DunamonDB e trazer o principais itens para os lojista. Seguindo a diretriz anterior.
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd

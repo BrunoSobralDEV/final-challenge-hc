@@ -93,7 +93,7 @@
         "variant": "secondary"
       },
       "displayMode": "button",
-      "label": "View details",
+      "label": "Ver detalhes",
       "href": "/{slug}/p"
     }
   },

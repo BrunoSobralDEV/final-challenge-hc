@@ -2,10 +2,13 @@
 # yarn lockfile v1
 
 
+<<<<<<< HEAD
 "@iconify/react@^3.2.2":
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@iconify/react/-/react-3.2.2.tgz#ab5241dc01562076bae3b0c22238aff7e5f029cc"
   integrity sha512-z3+Jno3VcJzgNHsN5mEvYMsgCkOZkydqdIwOxjXh45+i2Vs9RGH68Y52vt39izwFSfuYUXhaW+1u7m7+IhCn/g==
+=======
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
 
 "@types/classnames@^2.2.7":
   version "2.3.1"
@@ -14,6 +17,14 @@
   dependencies:
     classnames "*"
 
+<<<<<<< HEAD
+=======
+"@types/faker@^4.1.5":
+  version "4.1.12"
+  resolved "https://registry.yarnpkg.com/@types/faker/-/faker-4.1.12.tgz#065d37343677df1aa757c622650bd14666c42602"
+  integrity sha512-0MEyzJrLLs1WaOCx9ULK6FzdCSj2EuxdSP9kvuxxdBEGujZYUOZ4vkPXdgu3dhyg/pOdn7VCatelYX7k0YShlA==
+
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
 "@types/node@^18.6.4":
   version "18.6.4"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.6.4.tgz#fd26723a8a3f8f46729812a7f9b4fc2d1608ed39"
@@ -43,6 +54,15 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
+<<<<<<< HEAD
+=======
+"@iconify/react@^3.2.2":
+  version "3.2.2"
+  resolved "https://registry.npmjs.org/@iconify/react/-/react-3.2.2.tgz"
+  integrity sha512-z3+Jno3VcJzgNHsN5mEvYMsgCkOZkydqdIwOxjXh45+i2Vs9RGH68Y52vt39izwFSfuYUXhaW+1u7m7+IhCn/g==
+
+
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
 "@types/uuid@^8.3.0":
   version "8.3.4"
   resolved "https://registry.npmjs.org/@types/uuid/-/uuid-8.3.4.tgz"
@@ -75,6 +95,10 @@
   dependencies:
     react "17.0.1"
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
 "@vtex/tsconfig@^0.4.4":
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/@vtex/tsconfig/-/tsconfig-0.4.4.tgz#03fd9a65aabe4820e57a9ef14a01fdda1fab26fd"
@@ -129,9 +153,15 @@ apollo-utilities@1.3.4, apollo-utilities@^1.3.0, apollo-utilities@^1.3.4:
     ts-invariant "^0.4.0"
     tslib "^1.10.0"
 
+<<<<<<< HEAD
 "atmosphere.scrat@https://adams5--atmosphere.myvtex.com/_v/private/typings/linked/v1/atmosphere.scrat@0.0.2+build1659979307/public/@types/atmosphere.scrat":
   version "0.0.0"
   resolved "https://adams5--atmosphere.myvtex.com/_v/private/typings/linked/v1/atmosphere.scrat@0.0.2+build1659979307/public/@types/atmosphere.scrat#914684a22bb00701186916c18cd85c95de99a558"
+=======
+"atmosphere.scrat@https://llfalcao--atmosphere.myvtex.com/_v/private/typings/linked/v1/atmosphere.scrat@0.0.1+build1659819680/public/_types/react":
+  version "0.0.0"
+  resolved "https://llfalcao--atmosphere.myvtex.com/_v/private/typings/linked/v1/atmosphere.scrat@0.0.1+build1659819680/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
 
 "atmosphere.tendencies@http://atmosphere.vtexassets.com/_v/public/typings/v1/atmosphere.tendencies@0.0.1/public/@types/atmosphere.tendencies":
   version "0.0.1"
@@ -147,6 +177,14 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
 
+<<<<<<< HEAD
+=======
+faker@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/faker/-/faker-4.1.0.tgz#1e45bbbecc6774b3c195fad2835109c6d748cc3f"
+  integrity sha512-ILKg69P6y/D8/wSmDXw35Ly0re8QzQ8pMfBCflsGiZG2ZjMUNLYNexA6lz5pkmJlepVdsiDFUxYAzPQ9/+iGLA==
+
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
 fast-json-stable-stringify@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz#874bf69c6f404c2b5d99c481341399fd55892633"
@@ -202,6 +240,11 @@ iterall@^1.2.2:
   resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.3.0.tgz#afcb08492e2915cbd8a0884eb93a8c94d0d72fea"
   integrity sha512-QZ9qOMdF+QLHxy1QIpUHUU1D5pS2CG2P69LF6L6CPjPYA/XMOmKV3PZpawHoAjHNyB0swdVTRxdYT4tbBbxqwg==
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
@@ -221,7 +264,11 @@ object-assign@^4.1.1:
 
 prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.8.1"
+<<<<<<< HEAD
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
+=======
+  resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
   dependencies:
     loose-envify "^1.4.0"
@@ -255,6 +302,12 @@ react-intl@^2.7.2:
     invariant "^2.1.1"
 
 react-is@^16.13.1, react-is@^16.7.0:
+<<<<<<< HEAD
+=======
+
+react-is@^16.13.1:
+
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -267,6 +320,10 @@ react@17.0.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
 react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
@@ -278,6 +335,15 @@ scheduler@^0.19.1:
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.19.1.tgz#4f3e2ed2c1a7d65681f4c854fa8c5a1ccb40f196"
   integrity sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==
+<<<<<<< HEAD
+=======
+
+react@^16.12.0:
+  version "16.14.0"
+  resolved "https://registry.npmjs.org/react/-/react-16.14.0.tgz"
+  integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
+
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -299,16 +365,20 @@ tslib@^1.10.0, tslib@^1.9.3:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
+<<<<<<< HEAD
 typescript@3.9.7:
   version "3.9.7"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
   integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
 
+=======
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
 uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
+<<<<<<< HEAD
 "vtex.add-to-cart-button@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.28.0/public/@types/vtex.add-to-cart-button":
   version "0.28.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.28.0/public/@types/vtex.add-to-cart-button#9d9b0ead453d431c1a5277077614735851526e61"
@@ -329,11 +399,14 @@ uuid@^8.3.2:
   version "2.6.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.condition-layout@2.6.0/public/@types/vtex.condition-layout#499861a211a200da6174e2355de934358f3f8339"
 
+=======
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
 "vtex.css-handles@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles":
   version "1.0.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles"
   integrity sha512-zJL6hjlnmY5IxLFO+cjjTYVIS4flXwMtYnQSen93psIXHEXwDp93P/67GKHTj6B7KHZylmzkxWR6aj9EnoktMA==
 
+<<<<<<< HEAD
 "vtex.disclosure-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.disclosure-layout@1.0.3/public/@types/vtex.disclosure-layout":
   version "1.0.3"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.disclosure-layout@1.0.3/public/@types/vtex.disclosure-layout#15590cd6a3f23e5a7591d76ad1a44b5c0c6a088a"
@@ -378,11 +451,14 @@ uuid@^8.3.2:
   version "1.0.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-bookmark-interfaces@1.0.1/public/@types/vtex.product-bookmark-interfaces#2c26815e4afa45b2e254a23e5abb356424bb09e7"
 
+=======
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
 "vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context":
   version "0.10.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context"
   integrity sha512-wib/8sXnd5mYRaYxL0NlCTAbyhq02VQLzhHPjW3ixA5uJn8+7TGTloBMpW2g0Pz3Avj/Y1Z98NDFSWz+nUKM6w==
 
+<<<<<<< HEAD
 "vtex.product-customizer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-customizer@2.11.2/public/@types/vtex.product-customizer":
   version "2.11.2"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-customizer@2.11.2/public/@types/vtex.product-customizer#d3bb0f7c49be9bd2553fb38ce206a20a8869f5c6"
@@ -463,6 +539,12 @@ uuid@^8.3.2:
   version "0.22.2"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.2/public/@types/vtex.slider-layout"
   integrity sha512-31xgy7mWhkLUKogDxJ+hdgjZACEUd1kA2aG2fTH/l0ZpUQbANIdFZB3B5HiqirJmzG3ZoZGN19gKvJWxz/x0gw==
+=======
+"vtex.slider-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.2/public/@types/vtex.slider-layout":
+  version "0.22.2"
+
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.2/public/@types/vtex.slider-layout#0367df6d1205fad5e414684732cc5e13b60533c7"
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
 
 "vtex.slider@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider@0.8.3/public/@types/vtex.slider":
   version "0.8.3"
@@ -540,3 +622,10 @@ zen-observable@^0.8.0:
   version "0.8.15"
   resolved "https://registry.yarnpkg.com/zen-observable/-/zen-observable-0.8.15.tgz#96415c512d8e3ffd920afd3889604e30b9eaac15"
   integrity sha512-PQ2PC7R9rslx84ndNBZB/Dkv8V8fZEpk83RLgXtYd0fwUgEjseMn1Dgajh2x6S8QbZAFa9p2qVCEuYZNgve0dQ==
+<<<<<<< HEAD
+=======
+
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.2/public/@types/vtex.slider-layout"
+  integrity sha512-31xgy7mWhkLUKogDxJ+hdgjZACEUd1kA2aG2fTH/l0ZpUQbANIdFZB3B5HiqirJmzG3ZoZGN19gKvJWxz/x0gw==
+
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd

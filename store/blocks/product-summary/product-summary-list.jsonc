@@ -116,7 +116,7 @@
 
   "add-to-cart-button#buyNow": {
     "props": {
-      "text": "BUY NOW",
+      "text": "COMPRAR",
       "isOneClickBuy": true,
       "onClickEventPropagation": "enabled",
       "blockClass": "buyNow"

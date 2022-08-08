@@ -101,7 +101,11 @@
       "accessCodeTitle": "Receba um código de acesso via e-mail",
       "emailPlaceholder": "Digite seu e-mail",
       "passwordPlaceholder": "Digite sua senha",
+<<<<<<< HEAD
       "acessCodePlaceholder": "Código enviado para o seu e-mail",      
+=======
+      "acessCodePlaceholder": "Código enviado para o seu e-mail",     
+>>>>>>> 08cfeaa1e6f1488d0a7d1b75919ee999600800bd
       "iconLabel": "login",
       "accountOptionsButtonBehavior": "link",
       "showPasswordVerificationIntoTooltip": true
