@@ -10,6 +10,7 @@
 - :dart: [Installation](#Installation)
   - :gear: [Install dependencies](##Install_dependencies)
   - :rocket: [Getting Started](##Getting_Started)
+- :left_right_arrow: [API](#API)
 - :computer: [Techs](#Techs)
 - :bust_in_silhouette: [Author](#Author)
 - :handshake: [Contributing](#Contributing)
@@ -76,7 +77,10 @@ SSH is a secure protocol, but you need to register a key ssh in your github befo
 ```bash /store-scrat
 	vtex link
 ```
+---
+# :left_right_arrow: API
 
+- [Documentation API AWS](https://github.com/BrunoSobralDEV/final-challenge-hc/tree/main/aws)
 ---
 
 # :computer: Techs
@@ -112,7 +116,8 @@ SSH is a secure protocol, but you need to register a key ssh in your github befo
 # :bust_in_silhouette: Author
 
 <table>
-	<tr>
+	
+<tr>
 		<td align="center">
 			<a href="https://github.com/AdamsFlorisbal">
 				<img
@@ -254,8 +259,8 @@ SSH is a secure protocol, but you need to register a key ssh in your github befo
 				</sub>
 			</a>
 		</td>						
-		
-	</tr>	
+</tr>	
+	
 		
 	
 	
