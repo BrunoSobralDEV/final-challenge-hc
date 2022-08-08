@@ -1,0 +1,11 @@
+{
+  "product-recommendation": {
+    "component": "ProductRecommendation"
+  },
+  "shelf-home": {
+    "component": "ShelfHome"
+  },
+  "services": {
+    "component": "Services"
+  }
+}

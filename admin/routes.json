@@ -1,0 +1,6 @@
+{
+  "admin.app.list": {
+    "component": "listCombination",
+    "path": "/admin/app/list-of-combination"
+  }
+}

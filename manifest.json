@@ -1,14 +1,17 @@
 {
   "vendor": "atmosphere",
   "name": "scrat",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "builders": {
+    "messages": "1.x",
+    "admin": "0.x",
     "styles": "2.x",
     "store": "0.x",
     "sitemap": "0.x",
     "docs": "0.x",
     "node": "6.x",
-    "assets": "0.x"
+    "assets": "0.x",
+    "react": "3.x"
   },
   "mustUpdateAt": "2018-09-05",
   "scripts": {
@@ -66,7 +69,8 @@
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x",
     "atmosphere.tendencies": "0.x",
-    "vtex.shelf-indicate": "0.x"
+    "vtex.product-context": "0.x",
+    "vtex.order-items": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"

@@ -10,7 +10,12 @@
       "product-selling-price"
     ]
   },
-
+  "product-selling-price": {
+    "props": {
+      "blockClass": "fullPrice"
+    }
+  },
+  
   "flex-layout.row#list-price-savings": {
     "props": {
       "colGap": 2,

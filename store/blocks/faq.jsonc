@@ -22,7 +22,7 @@
   },
   "rich-text#faq": {
     "props": {
-      "text": "## FAQ"
+      "text": "## FAQ - Atmosphere"
     }
   },
 
@@ -31,7 +31,11 @@
       "disclosure-layout#first",
       "disclosure-layout#second",
       "disclosure-layout#third",
-      "disclosure-layout#fourth"
+      "disclosure-layout#fourth",
+      "disclosure-layout#five",
+      "disclosure-layout#sixth",
+      "disclosure-layout#seventh",
+      "disclosure-layout#eighth"
     ]
   },
 
@@ -56,12 +60,12 @@
   },
   "rich-text#question1": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "Quais são os requisitos para troca ou devolução de produtos?"
     }
   },
   "rich-text#answer1": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234."
+      "text": " - Para realizar a troca e devolução é obrigatório o produto conter as etiquetas fixadas. Devem esta em perfeito estado, sem indícios de uso, e deve esta na embalagem original. Além disso, a troca ou devolução deve acompanhar os prazos previstos na **[Políticas de Troca.](/faq)**"
     }
   },
 
@@ -86,12 +90,12 @@
   },
   "rich-text#question2": {
     "props": {
-      "text": "How can I track my order?"
+      "text": "Como trocar ou devolver um pedido?"
     }
   },
   "rich-text#answer2": {
     "props": {
-      "text": "After logging into your account, you can find this info at the link Orders."
+      "text": "- Solicite a troca ou devolução, acessando sua conta em nosso site no menu **Meus pedidos** , escolha o pedido que deseja devolver e em seguida use a opção **Solicitar Devolução**.  Depois, é só escolher o item que deseja trocar e seguir as orientações da página"
     }
   },
 
@@ -117,12 +121,12 @@
   },
   "rich-text#question3": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "Quais são as formas de reembolso para a devolução de um pedido ou item??"
     }
   },
   "rich-text#answer3": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234."
+      "text": " - **Vale-Troca:** O crédito é disponibilizado em 5 dias úteis; e pode ser usado em nossa loja, com validade de 180 dias. \n +  **Cartão de Crédito:** O estorno pode acontecer em até 2 faturas. \n\n + **Boleto:** O depósito é feito de acordo com os dados informados no momento da solicitação de reembolso, com prazo de até 10 dias úteis e em conta do titular da compra. "
     }
   },
 
@@ -144,17 +148,136 @@
     "props": {
       "blockClass": "answer"
     },
-    "children": ["rich-text#answer2"]
+    "children": ["rich-text#answer4"]
   },
   "rich-text#question4": {
     "props": {
-      "text": "How can I track my order?"
+      "text": "Posso cancelar a compra? Como cancelo meu pedido?"
     }
   },
   "rich-text#answer4": {
     "props": {
-      "text": "After logging into your account, you can find this info at the link Orders."
+      "text": " + Depois de concluir um pedido, não é possível cancelá-lo. Se desistiu da compra e ainda não recebeu ou retirou o seu pedido, basta recusá-lo no momento da entrega. \n\n - Ao retornar o pedido ao nosso estoque, um **Vale- Troca** com o mesmo valor do pedido será gerado para você. \n - O **Vale-Troca** está vinculado ao seu CPF e pode ser utilizado na loja, o saldo permanece vinculado ao seu CPF durante 180 dias . \n\n - Se recebeu o pedido, você também pode solicitar a devolução, de acordo com os **prazos previstos** para troca e devolução."
     }
+  },
+  "disclosure-layout#five": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#five", "disclosure-content#five"]
+  },
+  "disclosure-trigger#five": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question5"]
+  },
+  "disclosure-content#five": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer5"]
+  },
+  "rich-text#question5": {
+    "props": {
+      "text": "Quais são as formas de pagamento e condições aceitas?"
+    }
+  },
+  "rich-text#answer5": {
+    "props": {
+      "text": "- Aceitamos como formas de pagamento boleto bancário, cartão de crédito e cartão de débito.\n Quanto ao cartão de crédito, aceitamos as seguintes bandeiras: Visa, Master Card, Elo, American Express, Banes Card, Hipercard, JCB, Aura, Hiper. Além disso, os pagamentos podem ser parcelados em até 12 vezes."
+   }
+  },
+
+  "disclosure-layout#sixth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#sixth", "disclosure-content#sixth"]
+  },
+  "disclosure-trigger#sixth": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question6"]
+  },
+  "disclosure-content#sixth": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer6"]
+  },
+  "rich-text#question6": {
+    "props": {
+      "text": "Consigo rastrear o minha Compra?"
+    }
+  },
+  "rich-text#answer6": {
+    "props": {
+      "text": "- Sim. As informações mais atualizadas sobre sua Compra e a situação de entrega de sua Compra estão disponíveis em **Meus pedidos**. Além disso, você será notificado do andamento do seu pedido pelo e-mail cadastrado."
+   }
+  },
+
+  "disclosure-layout#seventh": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#seventh", "disclosure-content#seventh"]
+  },
+  "disclosure-trigger#seventh": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question7"]
+  },
+  "disclosure-content#seventh": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer7"]
+  },
+  "rich-text#question7": {
+    "props": {
+      "text": "E se o meu pagamento não for aprovado?  "
+    }
+  },
+  "rich-text#answer7": {
+    "props": {
+      "text": "- Você será notificado em até 48 horas e deverá inserir outro meio de pagamento. Caso contrário, a compra no site será cancelada."
+   }
+  },
+
+   "disclosure-layout#eighth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#eighth", "disclosure-content#eighth"]
+  },
+  "disclosure-trigger#eighth": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question8"]
+  },
+  "disclosure-content#eighth": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer8"]
+  },
+  "rich-text#question8": {
+    "props": {
+      "text": "Como faço para receber as Ofertas?"
+    }
+  },
+  "rich-text#answer8": {
+    "props": {
+      "text": "- Você pode criar uma Conta de Acesso  e preenchendo o cadastro de Cliente. A criação de uma **Conta de Acesso** vai facilitar sua navegação no site, permitindo, por exemplo, que você faça listas de desejos e simplificando o processo de Compra."
+   }
   },
 
 

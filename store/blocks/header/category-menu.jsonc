@@ -1,0 +1,176 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#moda-feminina-camisetas",
+      "menu-item#moda-feminina-calcas",
+      "menu-item#moda-feminina-vestidos",
+      "menu-item#moda-feminina-sapatos",
+      "menu-item#moda-feminina-esportivos",
+      "menu-item#moda-feminina-acessorios",
+      "menu-item#moda-feminina-underwear",
+      "menu-item#moda-feminina-todos-produtos"
+    ]
+  },
+  "menu-item#moda-feminina-camisetas": {
+    "props": {
+      "id": "menu-item-moda-feminina-camisetas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/camisetas/",
+        "noFollow": false,
+        "tagTitle": "Camisetas",
+        "text": "Camisetas"
+      }
+    }
+  },
+  "menu-item#moda-feminina-calcas": {
+    "props": {
+      "id": "menu-item-moda-feminina-calcas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/calcas/",
+        "noFollow": false,
+        "tagTitle": "Calças",
+        "text": "Calças"
+      }
+    }
+  },
+  "menu-item#moda-feminina-vestidos": {
+    "props": {
+      "id": "menu-item-moda-feminina-vestidos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/vestidos/",
+        "noFollow": false,
+        "tagTitle": "Vestidos",
+        "text": "Vestidos"
+      }
+    }
+  },
+  "menu-item#moda-feminina-saias": {
+    "props": {
+      "id": "menu-item-moda-feminina-saias",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/saias/",
+        "noFollow": false,
+        "tagTitle": "Saias",
+        "text": "Saias"
+      }
+    }
+  },
+  "menu-item#moda-feminina-sapatos": {
+    "props": {
+      "id": "menu-item-moda-feminina-sapatos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/sapatos/",
+        "noFollow": false,
+        "tagTitle": "Sapatos",
+        "text": "Sapatos"
+      }
+    }
+  },
+  "menu-item#moda-feminina-esportivos": {
+    "props": {
+      "id": "menu-item-moda-feminina-esportivos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/esportivos/",
+        "noFollow": false,
+        "tagTitle": "Esportivos",
+        "text": "Esportivos"
+      }
+    }
+  },
+  "menu-item#moda-feminina-acessorios": {
+    "props": {
+      "id": "menu-item-moda-feminina-acessorios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/acessorios/",
+        "noFollow": false,
+        "tagTitle": "Acessórios",
+        "text": "Acessórios"
+      }
+    }
+  },
+  "menu-item#moda-feminina-underwear": {
+    "props": {
+      "id": "menu-item-moda-feminina-underwear",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/underwear/",
+        "noFollow": false,
+        "tagTitle": "Underwear",
+        "text": "Underwear"
+      }
+    }
+  },
+  "menu-item#moda-feminina-todos-produtos": {
+    "props": {
+      "id": "menu-item-moda-todos-produtos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/moda-feminina/",
+        "noFollow": false,
+        "tagTitle": "Ver Tudo",
+        "text": "Ver Tudo"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#subcategory": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "flex-layout.row#1-desktop"
+    ]
+  },
+  "flex-layout.row#1-desktop": {
+    "props": {
+      "blockClass": "sub-menu-color"
+    },
+    "children": [
+      "menu-item#moda-feminina-camisetas",
+      "menu-item#moda-feminina-calcas",
+      "menu-item#moda-feminina-vestidos",
+      "menu-item#moda-feminina-saias",
+      "menu-item#moda-feminina-sapatos",
+      "menu-item#moda-feminina-esportivos",
+      "menu-item#moda-feminina-acessorios",
+      "menu-item#moda-feminina-underwear",
+      "menu-item#moda-feminina-todos-produtos"
+    ]
+  }
+}
