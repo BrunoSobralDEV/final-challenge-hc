@@ -8,9 +8,9 @@
 
 
 - :house: [About](#house-about)
-- :dart: [Installation](#dart-Installation-dart)
-  - :gear: [Install dependencies](#gear-Install_dependencies)
-  - :rocket: [Getting Started](#rocket-Getting_Started-rocket)
+- :dart: [Installation](#dart-Installation)
+  - :gear: [Install dependencies](##gear-Install_dependencies)
+  - :rocket: [Getting Started](##rocket-Getting_Started)
 - :left_right_arrow: [API](#left_right_arrow-API)
 - :computer: [Techs](#Techs-computer)
 - :bust_in_silhouette: [Author](#bust_in_silhouette-Author)
