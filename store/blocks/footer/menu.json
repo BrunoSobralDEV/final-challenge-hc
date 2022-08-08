@@ -4,10 +4,7 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#news",
-      "menu-item#blackfriday",
-      "menu-item#sale",
-      "menu-item#personalization"
+
     ]
   },
   "menu-item#news": {
@@ -77,8 +74,7 @@
     },
     "children": [
       "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
+      "menu-item#videogames"
     ]
   },
 
@@ -90,10 +86,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/decoration/smartphones",
+        "href": "/moda-feminina/vestidos/",
         "noFollow": true,
-        "tagTitle": "Smartphones",
-        "text": "Smartphones"
+        "tagTitle": "Vestidos",
+        "text": "Vestidos"
       }
     }
   },
@@ -106,10 +102,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/decoration/videogames",
+        "href": "/moda-feminina/saias/",
         "noFollow": true,
-        "tagTitle": "Videogames",
-        "text": "Videogames"
+        "tagTitle": "Saias",
+        "text": "Saias"
       }
     }
   },
@@ -149,10 +145,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bags/d",
+        "href": "/moda-feminina/esportivos/",
         "noFollow": true,
-        "tagTitle": "Bags",
-        "text": "Bags"
+        "tagTitle": "Esportivos",
+        "text": "Esportivos"
       }
     }
   },
@@ -165,10 +161,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bags/backpacks",
+        "href": "/moda-feminina/acessorios/",
         "noFollow": true,
-        "tagTitle": "Backpacks",
-        "text": "Backpacks"
+        "tagTitle": "Acessórios",
+        "text": "Acessórios"
       }
     }
   },
@@ -181,10 +177,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bags/necessaire",
+        "href": "/moda-feminina/underwear/",
         "noFollow": true,
-        "tagTitle": "Necessaire",
-        "text": "Necessaire"
+        "tagTitle": "Underwear",
+        "text": "Underwear"
       }
     }
   },
@@ -195,11 +191,8 @@
     },
     "children": [
       "menu-item#clothing",
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
+      "menu-item#shorts"
+
     ]
   },
 
@@ -208,9 +201,7 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#clothing-mobile",
-      "menu-item#decoration-mobile",
-      "menu-item#sale-mobile"
+      "menu-item#clothing-mobile"
     ]
   },
 
@@ -222,10 +213,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/d",
+        "href": "/moda-feminina/",
         "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "Moda Feminina",
+        "text": "Moda Feminina"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
@@ -234,16 +225,27 @@
     "children": ["vtex.menu@2.x:menu#clothing-accordion"]
   },
 
+
+
+
+
+
+
+
+
+
   "vtex.menu@2.x:menu#clothing-accordion": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
       "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
+      "menu-item#smartphones",
+      "menu-item#videogames",
+      "menu-item#necessaire",
+      "menu-item#backpacks",
+      "menu-item#bags",
+      "menu-item#clothing"
     ]
   },
 
@@ -266,8 +268,8 @@
     },
     "children": [
       "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
+      "menu-item#videogames"
+
     ]
   },
 
@@ -290,8 +292,7 @@
     },
     "children": [
       "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
+      "menu-item#videogames"
     ]
   },
 
@@ -303,10 +304,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/d",
+        "href": "/moda-feminina/camisetas/",
         "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "Camisetas",
+        "text": "Camisetas"
       }
     }
   },
@@ -319,58 +320,26 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/shorts",
+        "href": "/moda-feminina/calcas/",
         "noFollow": false,
-        "tagTitle": "Shorts",
-        "text": "Shorts"
+        "tagTitle": "Calças",
+        "text": "Calças"
       }
     }
   },
 
-  "menu-item#tank-tops": {
+  "menu-item#smartphones": {
     "props": {
-      "id": "menu-item-tank-tops",
+      "id": "menu-item-smartphones",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/tank-tops",
+        "href": "/moda-feminina/vestidos/",
         "noFollow": false,
-        "tagTitle": "Tank tops",
-        "text": "Tank tops"
-      }
-    }
-  },
-
-  "menu-item#shirts": {
-    "props": {
-      "id": "menu-item-shirts",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/shirts",
-        "noFollow": false,
-        "tagTitle": "Shirts",
-        "text": "Shirts"
-      }
-    }
-  },
-
-  "menu-item#sweatshirt": {
-    "props": {
-      "id": "menu-item-sweat-shirts",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/sweatshirt",
-        "noFollow": false,
-        "tagTitle": "Sweatshirt",
-        "text": "Sweatshirt"
+        "tagTitle": "Vestidos",
+        "text": "Vestidos"
       }
     }
   },
