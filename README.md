@@ -6,17 +6,14 @@
 
 # :pushpin: Table of Contents
 
-
-- :house: [About](#house-about)
-- :dart: [Installation](#dart-Installation)
-  - :gear: [Install dependencies](##gear-install_dependencies)
-  - :rocket: [Getting Started](##rocket-getting_started)
-- :left_right_arrow: [API](#left_right_arrow-API)
-- :computer: [Techs](#computer-techs)
-- :bust_in_silhouette: [Author](#bust_in_silhouette-author)
-- :handshake: [Contributing](#handshake-Contributing)
-- :scroll: [License](#scroll-License)
-
+- :house: [About](#about)
+- :dart: [Installation](#Installation)
+  - :gear: [Install dependencies](##Install_dependencies)
+  - :rocket: [Getting Started](##Getting_Started)
+- :computer: [Techs](#Techs)
+- :bust_in_silhouette: [Author](#Author)
+- :handshake: [Contributing](#Contributing)
+- :scroll: [License](#License)
 
 ---
 
@@ -80,10 +77,6 @@ SSH is a secure protocol, but you need to register a key ssh in your github befo
 	vtex link
 ```
 ---
-# :left_right_arrow: API
-
-- [Documentation API AWS](https://github.com/BrunoSobralDEV/final-challenge-hc/tree/main/aws)
----
 
 # :computer: Techs
 
@@ -118,8 +111,7 @@ SSH is a secure protocol, but you need to register a key ssh in your github befo
 # :bust_in_silhouette: Author
 
 <table>
-	
-<tr>
+	<tr>
 		<td align="center">
 			<a href="https://github.com/AdamsFlorisbal">
 				<img
@@ -261,8 +253,8 @@ SSH is a secure protocol, but you need to register a key ssh in your github befo
 				</sub>
 			</a>
 		</td>						
-</tr>	
-	
+		
+	</tr>	
 		
 	
 	

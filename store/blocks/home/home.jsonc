@@ -8,11 +8,15 @@
       "newsletter"
     ]
   },
+  "newsletter": {
+    "props": {
+      "blockClass": "news"
+    }
+  },
   "rich-text#shelf-tendencies": {
     "props": {
       "text": "## Tendências da temporada",
       "blockClass": "shelfTitle"
     }
   }
-
 }

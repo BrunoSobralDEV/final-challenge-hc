@@ -20,7 +20,7 @@
 }
 
 .newsletter .container {
- max-height: 18rem;
+  max-height: 18rem;
 }
 
 .newsletter :global(.vtex-input-prefix__group) {
@@ -74,7 +74,7 @@
 }
 
 @media only screen and (min-width: 640px) {
-      .label {
+  .label {
     font-size: 40px;
   }
 
@@ -123,7 +123,8 @@
 }
 
 .container {
-  max-width: 95%;
+  max-width: 100%;
+  padding: 0;
 }
 
 .productImageTag--main {
@@ -194,4 +195,42 @@
 
 .shareContainer {
   margin-top: 5px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* Edição começa aqui */
+.searchBarContainer {
+  width: 600px;
+}
+
+.logoLink {
+  background-color: #86ead1;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+.logoContainer,
+.sizeDesktop {
+  width: 180px;
+  padding: 0;
+}
+
+.container--news {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px
+}
+
+@media screen and (max-width:1030px) {
+  .searchBarContainer {
+    margin: 0 10px;
+    width: 300px;
+  }
+}
+
+.inputGroup,
+.inputGroup--news {
+  display: flex;
+  flex-direction: column;
 }

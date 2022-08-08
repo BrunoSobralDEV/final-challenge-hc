@@ -8,7 +8,7 @@
   font-weight: 800;
   font-weight: bold;
   color: #282828;
-   justify-content: left;
+  justify-content: left;
   text-align: center;
 }
 
@@ -68,12 +68,12 @@
 }
 
 
-.listItem{
+.listItem {
   list-style-type: none;
 }
 
 
-.link{
+.link {
   color: black;
   text-decoration: none;
 }
@@ -116,4 +116,20 @@
     justify-content: center;
     text-align: center;
   }
+}
+
+/* ________________________________________________
+A edição começa aqui */
+
+.container--footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b0b0b;
+  color: #fff;
+}
+
+.wrapper,
+.wrapper--footer {
+  text-align: center;
 }

@@ -18,8 +18,3 @@
     background-size: contain;
 }
 
-@media (max-width: 420px) {
-    .buttonText {
-        font-size: 12px;
-    }
-}

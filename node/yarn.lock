@@ -327,9 +327,9 @@ async@^2.6.3:
   dependencies:
     lodash "^4.17.14"
 
-"atmosphere.scrat@https://adams2--atmosphere.myvtex.com/_v/private/typings/linked/v1/atmosphere.scrat@0.0.2+build1659961211/public/_types/react":
+"atmosphere.scrat@https://llfalcao--atmosphere.myvtex.com/_v/private/typings/linked/v1/atmosphere.scrat@0.0.1+build1659819680/public/_types/react":
   version "0.0.0"
-  resolved "https://adams2--atmosphere.myvtex.com/_v/private/typings/linked/v1/atmosphere.scrat@0.0.2+build1659961211/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
+  resolved "https://llfalcao--atmosphere.myvtex.com/_v/private/typings/linked/v1/atmosphere.scrat@0.0.1+build1659819680/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
 
 "atmosphere.tendencies@http://atmosphere.vtexassets.com/_v/public/typings/v1/atmosphere.tendencies@0.0.1/public/@types/atmosphere.tendencies":
   version "0.0.1"
@@ -1613,10 +1613,6 @@ vary@^1.1.2:
   version "1.25.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.my-account@1.25.0/public/@types/vtex.my-account#3bc46389c0aa28f4e3e2e008fe3690f5901b1f2a"
 
-"vtex.order-items@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-items@0.13.21/public/@types/vtex.order-items":
-  version "0.13.21"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-items@0.13.21/public/@types/vtex.order-items#b88b2d267bc1b2877cae92e657b3934d4f01a960"
-
 "vtex.order-placed@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-placed@2.16.0/public/@types/vtex.order-placed":
   version "2.16.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-placed@2.16.0/public/@types/vtex.order-placed#c8b407e53409bb8d915934d3d74f73264746713b"
@@ -1680,6 +1676,10 @@ vary@^1.1.2:
 "vtex.product-summary@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.80.1/public/@types/vtex.product-summary":
   version "2.80.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.80.1/public/@types/vtex.product-summary#1210c99a487010c96c987033056e81437dcb289a"
+
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime":
+  version "8.132.4"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime#66bb41bd4d342e37c9d85172aad5f7eefebfb6dc"
 
 "vtex.responsive-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-layout@0.1.2/public/@types/vtex.responsive-layout":
   version "0.1.2"
