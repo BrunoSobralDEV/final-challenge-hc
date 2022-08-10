@@ -2,7 +2,11 @@ import React, { FC, useEffect, useState} from 'react'
 import { Layout, PageBlock } from 'vtex.styleguide'
 import getAllCombinations from './interfaces/getAllCombinations'
 
-
+const styles = {
+  center: {
+    textAlign: 'center',
+  },
+} as const;
 const ListCombination: FC = () => {
 
   const [getCombination, setUser] = useState<getAllCombinations>();
@@ -28,23 +32,23 @@ const ListCombination: FC = () => {
       <table className="table table-bordered">
         <thead>
           <tr>
-            <th  className='w-10 center' scope="col">ID</th>
+            <th className='w-10 center' scope="col">ID</th>
             <th className='w-10 center' scope="col">Quantity</th>
-            <th scope="col">Sku 1</th>
-            <th  scope="col ">Quantity 1</th>
-            <th  scope="col">Sku 2</th>
-            <th  scope="col">Quantity 2</th>
+            <th className='w-10 center' scope="col">Sku 1</th>
+            <th className='w-10 center' scope="col ">Quantity 1</th>
+            <th className='w-10 center' scope="col">Sku 2</th>
+            <th className='w-10 center' scope="col">Quantity 2</th>
           </tr>
         </thead>
         <tbody>
           {getCombination?.Items.map((item) => (
-            <tr>
-              <th scope="row">{item.id}</th>
-              <td>{item?.quantity}</td>
-              <td>{item?.skus[0].skuId}</td>
-              <td>{item?.skus[0].quantitySku}</td>
-              <td>{item?.skus[1].skuId}</td>
-              <td>{item?.skus[1].quantitySku}</td>
+            <tr style={styles.center}>
+              <th style={styles.center} scope="row">{item.id}</th>
+              <td style={styles.center}>{item?.quantity}</td>
+              <td style={styles.center}>{item?.skus[0].skuId}</td>
+              <td style={styles.center}>{item?.skus[0].quantitySku}</td>
+              <td style={styles.center}>{item?.skus[1].skuId}</td>
+              <td style={styles.center}>{item?.skus[1].quantitySku}</td>
             </tr>
           ))}
         </tbody>
@@ -58,5 +62,3 @@ const ListCombination: FC = () => {
 }
 
 export default ListCombination
-
-

@@ -23,6 +23,8 @@ The challenge's proposal is to create a store where orders must be processed and
 
 For more details:
 
+- [Link do projeto](https://atmosphere1--atmosphere.myvtex.com/)
+
 - [PDF With proposed challenge](https://docs.google.com/document/d/173I4RVJhIRqcmN6H9uCUQTQeWv_YngsM-ehbWUPuF-w/edit#)
 
 ---
