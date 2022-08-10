@@ -6,6 +6,8 @@ Endpoints:
 
 GET: [https://3jfc0467k2.execute-api.us-east-1.amazonaws.com/compra](https://3jfc0467k2.execute-api.us-east-1.amazonaws.com/compra)
 
+GETadmin: [https://zpgwunqvzc.execute-api.us-east-1.amazonaws.com/getAllCombination](https://zpgwunqvzc.execute-api.us-east-1.amazonaws.com/getAllCombination)
+
 POST: [https://k30cnnmuxj.execute-api.us-east-1.amazonaws.com/createOrUpdate/combinationCreateOrUpdate](https://k30cnnmuxj.execute-api.us-east-1.amazonaws.com/createOrUpdate/combinationCreateOrUpdate)
 
 ### GET /compra
