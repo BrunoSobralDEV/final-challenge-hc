@@ -2,23 +2,21 @@
 <h1 align="center">Hiring Coders 3 - Desafio Final</h1>
 
 ---
-<a target="_blank" href="https://www.youtube.com/watch?v=uOHKTYh0xI4"><img align="right" alt="Vídeo projeto final" src="https://img.youtube.com/vi/uOHKTYh0xI4/0.jpg"></a>
+<a href="https://www.youtube.com/watch?v=uOHKTYh0xI4" target="_blank"><img align="right" alt="Vídeo projeto final" src="https://img.youtube.com/vi/uOHKTYh0xI4/0.jpg"></a>
 # :pushpin: Table of Contents
 
-
-
 - :house: [About](#about)
-- :dart: [Installation](#Installation)
-  - :gear: [Install dependencies](##Install_dependencies)
-  - :rocket: [Getting Started](##Getting_Started)
-- :computer: [Techs](#Techs)
-- :bust_in_silhouette: [Author](#Author)
-- :handshake: [Contributing](#Contributing)
-- :scroll: [License](#License)
+- :dart: [Installation](#installation)
+  - :gear: [Install dependencies](#install_dependencies)
+  - :rocket: [Getting Started](#getting_started)
+- :computer: [Techs](#techs)
+- :bust_in_silhouette: [Author](#author)
+- :handshake: [Contributing](#contributing)
+- :scroll: [License](#license)
 
 ---
 
-# :house: About
+<h1 id="about">:house: About</h1>
 
 The challenge's proposal is to create a store where orders must be processed and <br> used to make purchase suggestions indicating products sold in combos.
 
@@ -30,7 +28,7 @@ For more details:
 
 ---
 
-# :dart: Installation
+<h1 id="installation">:dart: Installation</h1>
 
 **First you need to install:**
 
@@ -54,13 +52,13 @@ Or by ssh, running this command:
 
 SSH is a secure protocol, but you need to register a key ssh in your github before.
 
-## :hammer_and_wrench: Install dependencies
+<h2 id="install_dependencies">:hammer_and_wrench: Install dependencies</h2>
 
 ```bash
   yarn global add vtex
 ```
 
-## :rocket: Getting Started
+<h2 id="getting_started">:rocket: Getting Started</h2>
 
 ```bash
   vtex login {your name workspace}
@@ -81,7 +79,7 @@ SSH is a secure protocol, but you need to register a key ssh in your github befo
 ```
 ---
 
-# :computer: Techs
+<h1 id="techs">:computer: Techs</h1>
 
 - Front-End
 
@@ -111,7 +109,7 @@ SSH is a secure protocol, but you need to register a key ssh in your github befo
 [![Notion](https://img.shields.io/badge/Notion-blue?style=for-the-badge&logo=Notion&logoColor=ffffff)](#)
 ---
 
-# :bust_in_silhouette: Author
+<h1 id="author">:bust_in_silhouette: Author</h1>
 
 <table>
 	<tr>
@@ -256,22 +254,18 @@ SSH is a secure protocol, but you need to register a key ssh in your github befo
 				</sub>
 			</a>
 		</td>						
-		
-	</tr>	
-		
-	
-	
+  </tr>	
 </table>
 
 ---
 
-# :handshake: Contributing
+<h1 id="contributing">:handshake: Contributing</h1>
 
 Contributions, issues and feature requests are welcome! Feel free to **file a new issue** on the [Desafio-final-Hiring-Coders-3](https://github.com/BrunoSobralDEV/final-challenge-hc.git/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**!
 
 ---
 
-# :scroll: License
+<h1 id="license">:scroll: License</h1>
 
 Copyright :copyright: 2022 [Adams Gawlinski Florisbal, Affonso Kopmann, Alexx Moreira, Bruno Sobral, Duda Fajardo, Katianne Araujo, Luis Gabriel Fidélis, Luiz Otávio Lima Falcão, Mateus Toledo, Mônica Mendes](https://github.com/AdamsFlorisbal/Desafio-semi-final-Hiring-Coders-3).
 <br/>
